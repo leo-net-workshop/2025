@@ -384,7 +384,7 @@ ulx li {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
-/.intro {
+.intro {
     margin-top: 150px;
 }
 
@@ -516,46 +516,7 @@ ulx li {
 }
 
 /*
- * 6.7 Section: Schedule
- */
-.partner {
-  background-color: #f8f8f8;
-}
-.partner .partner-box {
-  display: block;
-  opacity: 0.3;
-  height: 150px;
-  width: 150px;
-  margin: 25px auto;
-  -webkit-transition: 0.5s all linear;
-          transition: 0.5s all linear;
-}
-.partner .partner-box:hover {
-  opacity: 1;
-}
-.partner .partner-box-1 {
-  background: url("https://nss.cs.nctu.edu.tw/img/partner/partner-1.png") no-repeat center center/contain;
-}
-.partner .partner-box-2 {
-  background: url("https://nss.cs.nctu.edu.tw/img/partner/partner-2.png") no-repeat center center/contain;
-}
-.partner .partner-box-3 {
-  background: url("https://nss.cs.nctu.edu.tw/img/partner/partner-3.png") no-repeat center center/contain;
-}
-.partner .partner-box-4 {
-  background: url("https://nss.cs.nctu.edu.tw/img/partner/partner-4.png") no-repeat center center/contain;
-}
-.partner .partner-box-5 {
-  background: url("https://nss.cs.nctu.edu.tw/img/partner/partner-5.png") no-repeat center center/contain;
-}
-.partner .partner-box-6 {
-  background: url("https://nss.cs.nctu.edu.tw/img/partner/partner-6.png") no-repeat center center/contain;
-}
-.partner .partner-box-7 {
-  background: url("https://nss.cs.nctu.edu.tw/img/partner/partner-7.png") no-repeat center center/contain;
-}
-.partner .partner-box-8 {
-  background: url("https://nss.cs.nctu.edu.tw/img/partner/partner-8.png") no-repeat center center/contain;
+
 }
 
 /*
