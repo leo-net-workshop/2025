@@ -1,0 +1,101 @@
+---
+# this is an empty front matter
+---
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{
+        site.data.conference.year }}</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+    {% include header.html %}
+
+    <section id="cfp" class="section cfp" style="display: block;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">CALL FOR PAPERS</h3>
+                </div>
+            </div>
+
+            <p align="justify">Low Earth Orbit (LEO) satellite communication and networking is a rapidly growing field
+                with
+                great potential for enabling new and innovative applications by providing low-latency,
+                high-bandwidth Internet connectivity globally. Massive-scale LEO deployments from industrial
+                players, such as Starlink, OneWeb, etc. have allowed wide-scale availability of LEO satellite
+                network access globally but their network remains to operate as a black box. However,
+                considering the state of LEO networking and constellation design is still in its infancy, we believe
+                that the unique challenges posed by the inherently dynamic LEO satellite architectures,
+                necessitate novel solutions in network architecture, protocol design, resource management,
+                along with several other verticals.</p>
+
+            <p align="justify">LEONET 2025 invites submissions from researchers and practitioners in academia and industry who are exploring the latest developments and open challenges in LEO satellite networks and communications. We also welcome work-in-progress and position papers that present new directions, highly original ideas, or have the potential to provoke insightful discussions during the workshop. Whether you're an expert or a newcomer to the field, we encourage you to join us and contribute to this exciting area of research.</p>
+
+            <p align="justify">As such, the scope of this workshop includes (but is not limited to) the following
+                topics.<br /></p>
+
+            <ulx class="list-arrow-right" style="font-weight: 100;">
+                <li>LEO topology/constellation design</li>
+                <li>Routing for LEO constellations </li>
+                <li>Transport for LEO networks </li>
+                <li>Congestion control for LEO networks </li>
+                <li>Resource management for LEO networks </li>
+                <li>Content Delivery and Streaming over LEO networks</li> 
+                <li>Mobility and handover management in LEO networks </li>
+                <li>Interactions between LEO, MEO and GEO constellations</li>
+                <li>Interplay next-generation mobile (5G, 6G) and LEO networks </li>
+                <li>Mobile/Edge computing and IoT in space </li>
+                <li>ML/AI for LEO satellites</li>
+                <li>Emerging applications for LEO networks </li>
+                <li>Performance measurements over LEO networks</li>
+                <li>Simulation/Emulation tools for LEO networks</li>
+                <li>Security/Privacy for LEO networks</li>
+
+            </ulx>
+
+            <br />
+            <p><b>SUBMISSION GUIDELINES</b>
+
+            <p>Submissions must be original, unpublished work, and not currently under consideration elsewhere.
+                Regular research papers of up to 6 pages, excluding references and appendices, in two-column 10pt ACM format. Submissions must be original, unpublished work, and not under consideration at another conference or journal. Papers must exclude author names and affiliations for double-blind peer reviewing by the TPC. Authors of accepted submissions are expected to present their work at the workshop. Prospective authors are encouraged to use the same PDF formatting guidelines as the main conference. Authors of accepted papers are expected to present their work at the workshop. Accepted papers will be published in the SIGCOMM Workshop Proceedings, and available at the ACM Digital Library.</p>
+
+            <p>You may find these <a href="https://www.acm.org/publications/proceedings-template"
+                    target="_blank">templates</a> useful in complying with the above requirements. For Latex users,
+                please use <i>\documentclass[sigconf, 10pt, anonymous]{acmart}</i>. But as an author, you bear the final
+                responsibility to verify (manually or through the above online paper checker) that your submission is
+                format-compliant.</p>
+                
+ 
+            <p>Submission website: <a href="{{ site.data.conference.submission_site }}"
+                    target=”_blank”>{{ site.data.conference.submission_site }}</a></p>
+
+
+            <p><b>IMPORTANT DATES:</b><br />
+
+                Paper submission: {{ site.data.dates.submission }}<br />
+                Paper acceptance notification: {{ site.data.dates.notification }}<br />
+                Camera ready: {{ site.data.dates.camera_ready }}<br />
+                Workshop: {{ site.data.conference.dates }}</p>
+
+            <p>If you have any other questions regarding {{ site.data.conference.short_title }} {{ site.data.conference.year }}, please contact us at <a href="mailto:n.mohan@tudelft.nl"><u>n.mohan@tudelft.nl</u></a>.
+        </div>
+    </section>
+
+    <!-- import navigation bar and header -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+</body>
+
+</html>

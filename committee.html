@@ -1,0 +1,88 @@
+---
+# this is an empty front matter
+---
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{
+    site.data.conference.year }}</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+  {% include header.html %}
+
+  <section id="organization" class="section faq" style="display: block;">
+    <div class="container">
+
+      <h3>Workshop Organisers</h3>
+      {% for chair in site.data.chairs.general_chairs %}
+      {{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}<br />
+      {% endfor %}
+
+
+      <!--
+            <h3>Web Chair</h3>
+						{% for chair in site.data.chairs.web_chairs %}
+              {{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}<br/>
+            {% endfor %}
+-->
+
+      <h3>Technical Program Committee</h3>
+
+      To be announced soon.
+<!--
+      Ahmed Saeed, GeorgiaTech, USA </br>
+      Akshay Gadre, University of Washington, USA </br>
+      Yuanjie Li, Tsinghua University, China </br>
+      Nishanth Sastry, University of Surrey, UK </br>
+      Matteo Varvello, Nokia Bell Labs, USA </br>
+      Zeqi Lai, Tsinghua University, China </br>
+      Sumit Roy, University of Washington, USA </br>
+      Sangeetha Abdu Jyothi, University of California, Irvine, USA </br>
+      Aravindh Raman, Brave Research, UK </br>
+      David Bermbach, TU Berlin, Germany </br>
+      Anna Brünstorm, Karlstadt University, Sweden </br>
+      Jiangchuan Liu, Simon Fraser University, Canada </br>
+      Shangguang Wang, Beijing University of Posts and Telecommunications (BUPT), China </br>
+      Suraj Jog, Microsoft Research, USA </br>
+      Jianping Pan, University of Victoria, Canada </br>
+      Amitangshu Pal, IIT Kanpur, India</br>
+      Mahesh Marina, University of Edinburgh, UK</br>
+      Bhuvana Krishnaswamy, University of Wisconsin–Madison, US</br>
+      Paulo Mendes, Airbus Research, Germany</br>
+      Tusher Chakraborty, Microsoft Research, USA </br>
+-->
+
+
+      <!-- Giuliari Giacomo, ETH Zurich, Switzerland </br> -->
+      <!-- Jörg Ott, Technical University of Munich, Germany </br> -->
+      <!-- Mahesh Marina, University of Edinburgh, UK </br> -->
+
+      <!--
+      <h3>Advisory Board Member</h3>
+      Debopam Bhattacherjee, Microsoft Research India </br>
+      Nishanth Sastry, University of Surrey, UK </br>
+      -->
+
+
+
+    </div>
+  </section>
+
+  <!-- import navigation bar and header -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+</body>
+
+</html>

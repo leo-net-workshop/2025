@@ -1,0 +1,41 @@
+---
+# this is an empty front matter
+---
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{ site.data.conference.year }}</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    {% include header.html %}
+
+    <section id="organization" class="section faq" style="display: block;">
+        <div class="container">
+
+            <h3>Previous Editions</h3>		
+            <span>
+            <strong><a href="https://leo-net-workshop.github.io/2024/" target="_blank">LEO-NET 2024</a></strong>
+            </span>
+            <br>
+            <span>
+            <strong><a href="https://leo-net-workshop.github.io/2023/" target="_blank">LEO-NET 2023</a></strong>
+            </span>
+
+        </div>
+    </section>
+
+    <!-- import navigation bar and header -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+</body>
+</html>

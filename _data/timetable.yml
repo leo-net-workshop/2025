@@ -1,0 +1,444 @@
+# start_date: "28.06.2021"
+# duration: 4
+# start_time: "09:00"
+# end_time: "14:30"
+# slot_duration: "00:15"
+# show_url: true
+# default_text:
+#   - type: "break"
+#     text: "Discussion break"
+#   - type: "lunch"
+#     text: "Lunch break"
+#   - type: "empty"
+#     text: ""
+# dates:
+#   - start_slot: 0
+#     duration_slot: 4
+#     day: 0
+#     name: "Tutorial 1"
+#     text: "Machine Learning over Static and Dynamic Relational Data"
+#     authors: "Ahmet Kara, Milos Nikolic, Dan Olteanu, Haozhe Zhang"
+#     type: "tutorial"
+#     chair: "Martin Ugarte"
+#     doi: "https://doi.org/10.1145/3465480.3467843"
+#     parts:
+#       - title: "Part 1: Introduction"
+#         youtube: "https://youtu.be/wbqViU3vPkQ"
+#       - title: "Part 2: Idea 1"
+#         youtube: "https://www.youtube.com/watch?v=3OvlknaNJIo"
+#       - title: "Part 3: Idea 2"
+#         youtube: "https://www.youtube.com/watch?v=W6GrRmqvLyc"
+#       - title: "Part 4: Idea 3"
+#         youtube: "https://www.youtube.com/watch?v=nlPNc5F2Gzw"
+#       - title: "Part 5: Conclusion"
+#         youtube: "https://www.youtube.com/watch?v=GIYgzn3x-Hc"
+#   - start_slot: 4
+#     duration_slot: 1
+#     day: 0
+#     type: "break"
+#   - start_slot: 5
+#     duration_slot: 4
+#     day: 0
+#     name: "Tutorial 1"
+#     text: "Machine Learning over Static and Dynamic Relational Data"
+#     type: "tutorial"
+#     hide: true
+#   - start_slot: 9
+#     duration_slot: 3
+#     day: 0
+#     type: "lunch"
+#   - start_slot: 12
+#     duration_slot: 4
+#     day: 0
+#     name: "Tutorial 2"
+#     text: "Web Stream Processing with RSP4J"
+#     authors: "Riccardo Tommasini, Pieter Bonte"
+#     type: "tutorial"
+#     chair: "Emanuele Della Valle"
+#     doi: "https://doi.org/10.1145/3465480.3467844"
+#   - start_slot: 16
+#     duration_slot: 1
+#     day: 0
+#     type: "break"
+#   - start_slot: 17
+#     duration_slot: 4
+#     day: 0
+#     name: "Tutorial 2"
+#     text: "Web Stream Processing with RSP4J"
+#     type: "tutorial"
+#     hide: true
+#   - start_slot: 21
+#     duration_slot: 1
+#     day: 0
+#     type: "break"
+#   - start_slot: 22
+#     duration_slot: 1
+#     day: 0
+#     type: "empty"
+
+#   - start_slot: 0
+#     duration_slot: 4
+#     day: 1
+#     name: "Tutorial 3"
+#     text: "Graph Stream Analytics"
+#     authors: "Andras A. Benczur, Ferenc Beres, Domokos Kelen, Robert Palovics"
+#     type: "tutorial"
+#     doi: "https://doi.org/10.1145/3465480.3468293"
+#     chair: "Tilmann Rabl"
+#     parts:
+#       - title: "Part 1"
+#         youtube: "https://youtu.be/Ue-keiTz3YI"
+#       - title: "Part 2"
+#         youtube: "https://youtu.be/IGv4DqEKMlM"
+#   - start_slot: 4
+#     duration_slot: 1
+#     day: 1
+#     type: "break"
+#   - start_slot: 5
+#     duration_slot: 4
+#     day: 1
+#     name: "Tutorial 3"
+#     text: "Graph Stream Analytics"
+#     type: "tutorial"
+#     hide: true
+#   - start_slot: 9
+#     duration_slot: 3
+#     day: 1
+#     type: "lunch"
+#   - start_slot: 12
+#     duration_slot: 1
+#     day: 1
+#     type: "sponsors"
+#     text: "Sponsor presentations"
+#     papers:
+#       - title: "Euranova x ACM DEBS 2021"
+#         youtube: https://www.youtube.com/watch?v=8eLkbW-bHXA
+#         speaker:
+#           name: "Maryse Colson"
+#           bio: "Maryse Colson is the Mary Poppins of Euranova (Brussels, BE), taking care of people, fixing tactical communication issues, and doing her magic from time to time. She has a PhD in French Literature; her thesis was about The Genesis of the Cookbook: Discursive Study of the Culinary Publications in the Ancien Regime (Université de Liège, 2014) and she uses her literary skills for the benefit of a staff of passionate data experts and their management team."
+#       - title: "Infront@DEBS2021"
+#         youtube:  https://www.youtube.com/watch?v=H-pG5U9YoWs
+#         speaker:
+#           name: "Sebastian Frischbier"
+#           bio: "For Sebastian, this year's DEBS conference is marking a full decade of affiliation with the DEBS community: his first time at a DEBS conference had been in 2011 (DEBS New York, US) as a PhD candidate under the supervision of Alejandro Buchmann (and later, also Peter Pietzuch). He received his PhD on runtime support for quality of information requirements in event-based systems from TU Darmstadt before re-joining industry in various leadership positions.<br/>In his current role at Infront, Sebastian is fostering transparency, simplification, and automation regarding, systems, processes, and roles across the Infront group. While this might sound to be completely detached from his former areas of interest it is actually the direct application of his research, as Infront is doing event-processing at scale for a living. He is also still actively engaging in joint research activities and looking for interesting collaboration topics between industry and academia.<br/>Please do not hesitate to get in touch with Sebastian (e.g., via the DEBS 2021 Slack channels) regarding collaboration opportunities or career options at Infront -- there might be more topics of mutual interest than you think."
+#         pdf: "/img/Handout_Infront_DEBS2021.pdf"
+#   - start_slot: 13
+#     duration_slot: 6
+#     day: 1
+#     type: "grandchallenge"
+#     text: "Grand challenge"
+#     chair: "Grand Challenge Co-Chairs"
+#     papers:
+#       - title: 'Solving the 2021 DEBS Grand Challenge using Apache Flink'
+#         authors: 'Mina Morcos, Baiqing Lyu, Snigdha Kalathur'
+#         doi: "https://doi.org/10.1145/3465480.3466929"
+#         youtube: https://www.youtube.com/watch?v=HNQPQ0e5Yww
+#         speaker:
+#           name: "Mina Morcos, Snigdha Kalathur, Baiqing Lyu"
+#           bio: "We are all students currently studying at Boston University. This project was our class project for the BU CAS CS 591K1 Stream Data Processing class. We had a lot of fun understanding the applications and uses of Apache Flink and learned a lot about the field."
+#       - title: 'The DEBS 2021 Grand Challenge'
+#         authors: 'Jawad Tahir, Christoph Doblander, Ruben Mayer, Sebastian Frischbier, Hans-Arno Jacobsen'
+#         doi: "https://doi.org/10.1145/3465480.3467836"
+#         youtube: https://youtu.be/z40JbV637mo
+#         speaker:
+#           name: "Jawad Tahir"
+#           bio: "Jawad Tahir is a Ph.D. candidate at the Technical University of Munich and co-chair of the DEBS '21 Grand Challenge track. Previously, he worked on power chips of 5G modems at Intel. Currently, he is benchmarking distributed systems under defined constraints. His research interests include distributed systems, stream processing, fault tolerance, and reinforcement learning."
+#       - title: 'DEBS Grand Challenge: Real-Time Detection of Air Quality Improvement with Apache Flink'
+#         authors: 'Josip Marić, Krešimir Pripužić, Martina Antonić'
+#         doi: "https://doi.org/10.1145/3465480.3466930"
+#         youtube: https://youtu.be/2YPdcU5Aj4w
+#         speaker:
+#           name: "Josip Marić"
+#           bio: "Josip Marić was born in Zagreb, Croatia on the 26th of November 1996, where he finished primary and secondary school. He received B.Sc. degree in computing and M.Sc. degree in information and communication technology from the University of Zagreb, Faculty of Electrical Engineering and Computing, Zagreb, Croatia in 2018 and 2020, respectively. Since November 2020, he is working as a research assistant at the Department of Telecommunications."
+#       - title: 'Scalable Analytics of Air Quality Batches with Apache Spark and Apache Sedona'
+#         authors: 'Rim Moussa'
+#         doi: "https://doi.org/10.1145/3465480.3466931"
+#         youtube: https://youtu.be/TEeOR7tELfY
+#         speaker:
+#           name: "Rim Moussa"
+#           bio: "Rim Moussa is currently a tenured associate professor at University of Carthage (ENI-Carthage, Tunisia). She is also habilitated as associate professor in Computer Science Engineering by the the French National Council of Universities. She received her M.Sc. (DEA127 -Computer Science: Intelligent Systems) and Ph.D in Distributed Databases  from Université Paris IX Dauphine (France) under the supervision of Pr. Witold LITWIN. She ensures both undergraduate and graduate lectures, related to distributed data management systems,  Data Warehousing, NoSQL databases, Spatial databases, and Cloud Computing & HPC (Big Data, Apache Hadoop, Apache Spark..). Her current research interests include Scalable and Distributed Data Management systems, Data warehousing, Big Data Architectures and Spatial Computing at scale."
+#   - start_slot: 19
+#     duration_slot: 1
+#     day: 1
+#     type: "break"
+#   - start_slot: 20
+#     duration_slot: 3
+#     day: 1
+#     type: "empty"
+
+
+#   - start_slot: 0
+#     duration_slot: 2
+#     day: 2
+#     name: "Opening speech"
+#     type: "orga"
+#     chair: "General Co-Chairs + PC Co-Chairs"
+#   - start_slot: 2
+#     duration_slot: 4
+#     day: 2
+#     name: "Keynote 1"
+#     type: "keynote"
+#     chair: "Nesime Tatbul"
+#     keynote_index: 1
+#   - start_slot: 6
+#     duration_slot: 1
+#     day: 2
+#     type: "break"
+#   - start_slot: 7
+#     duration_slot: 4
+#     day: 2
+#     name: "Research track 1"
+#     text: "Blockchain"
+#     chair: "Martin Ugarte"
+#     papers:
+#       - title: An Event Driven Framework for Smart Contract Execution
+#         authors: Mudabbir Kaleem, Keshav Kasichainula, Rabimba Karanjai, Lei Xu, Zhimin Gao, Lin Chen and Weidong Shi
+#         abstract: "Blockchain-based smart contract platforms have traditionally em- ployed the transaction-driven execution model. This paper presents an alternate framework for blockchain-based smart contract execu- tion called EDSC. Our platform design presents a novel approach to tackle the scalability and performance challenges facing the smart contract ecosystem. We base EDSC’s design on the Ethereum tem- plate, and it can be readily implemented for other existing smart contract platforms. To evaluate our design, we perform an experi- mental implementation using the Ethereum client. Our experiments with performance modeling show, on average, a 2.2 to 4.6 times reduced total latency of event-triggered smart contracts, demon- strating the effectiveness of the design in supporting time-sensitive applications. Additionally, we comment on the design’s potential security aspects and demonstrate its utility by discussing potential use cases."
+#         doi: "https://doi.org/10.1145/3465480.3466924"
+#         youtube: https://youtu.be/Vvx0cQvPeOk
+#         speaker:
+#           name: "Mudabbir Kaleem"
+#           bio: "The presenter is a graduate student at the University of Houston with research centered around decentralized systems, smart contract security and cryptocurrencies."
+#       - title: Towards Event-driven Decentralized Marketplaces on the BlockChain
+#         authors: 'Akash Pateria, Kemafor Anyanwu'
+#         abstract: 'Blockchains have become a popular technology for lowering the trust-tax burden between transacting parties that cannot necessar- ily trust each other. They are used as substitutes for the centralized authorities typically incorporated in transactional workflows to per- form verification tasks and have the advantage of being objective and incorruptible. For applications such as supply chain market- places, auxilliary functionalities beyond the core blockchain roles of recording and validating transactions such as event detection are important for enabling application participants be responsive to business conditions. Unfortunately, existing blockchain event frameworks are immature, syntactic, inflexible and not expressive enough for many application needs.<br/>In this paper, we propose an approach that involves an event model which "semantifies blockchain transactions" and an imple- mentation architecture that integrates a open-source blockchain database BigChainDB with a semantic engine and publish-subscribe messaging platform. Finally, we model and simulate a use-case in- spired from the manufacturing domain and present usability and preliminary performance results that demonstrate the discrimina- tory ability of semantics-enabled event model.'
+#         doi: "https://doi.org/10.1145/3465480.3466921"
+#         youtube: https://youtu.be/pEzE6VRYoSo
+#         speaker:
+#           name: "Kemafor Anyanwu"
+#           bio: "Kemafor Anyanwu is an Associate Professor of Computer Science at North Carolina State University. She specializes in the areas of Big Data and Semantic Web Data Management."
+#       - title: An Experimental Framework for Improving the Performance of BFT Consensus For Future Permissioned Blockchains
+#         authors: 'Man-Kit Sit, Manuel Bravo, Zsolt István'
+#         abstract: "Blockchains have become a popular technology for lowering the trust-tax burden between transacting parties that cannot necessar ily trust each other. They are used as substitutes for the centralized  authorities typically incorporated in transactional workflows to per form verification tasks and have the advantage of being objective and incorruptible. For applications such as supply chain market places, auxilliary functionalities beyond the core blockchain roles  of recording and validating transactions such as event detection  are important for enabling application participants be responsive  to business conditions. Unfortunately, existing blockchain event  frameworks are immature, syntactic, inflexible and not expressive  enough for many application needs.  In this paper, we propose an approach that involves an event  model which 'semantifies blockchain transactions' and an implementation architecture that integrates a open-source blockchain  database BigChainDB with a semantic engine and publish-subscribe  messaging platform. Finally, we model and simulate a use-case in  spired from the manufacturing domain and present usability and  preliminary performance results that demonstrate the discriminatory ability of semantics-enabled event model."
+#         youtube: https://www.youtube.com/watch?v=gljDaye09kU
+#         doi: https://doi.org/10.1145/3465480.3466922
+#         speaker:
+#           name: "Zsolt István"
+#           bio: "Zsolt István is an Associate Professor at the IT University of Copenhagen. Before that, he was an Assistant Research Professor at the IMDEA Software Institute in Madrid, Spain. Zsolt works in the intersection of databases, distributed systems, and FPGA programming. He has a PhD in Computer Science from the Systems Group at ETH Zurich, Switzerland."
+#     type: "research"
+#   - start_slot: 11
+#     duration_slot: 1
+#     day: 2
+#     type: "break"
+#   - start_slot: 12
+#     duration_slot: 3
+#     day: 2
+#     type: "lunch"
+#   - start_slot: 15
+#     duration_slot: 3
+#     day: 2
+#     name: "Research track 2"
+#     text: "Stream Processing"
+#     type: "research"
+#     chair: "Asterios Katsifodimos"
+#     papers:
+#       - title: Box Queries over Multi-Dimensional Streams
+#         authors: 'Roy Friedman, Rana Shahout'
+#         abstract: "Answering statistical queries about streams of online arriving data is becoming increasingly important. Often, such data includes multiple-attributes, so data elements can be viewed as points in a multi-dimensional universe. This paper extends existing works on streaming algorithms by studying the ability to perform box queries on online multi-dimensional data streams. We develop three algo- rithms C-DARQ, DARQ and MARQ that support such capabilities for a large number of statistical functions including (but not limited to) counting, frequency estimation, heavy-hitters etc. The protocols are analyzed and evaluated over synthetic and datasets from Kaggle in multiple dimensions (up to 8). Our algorithms asymptotically improve the space bounds as well as update and query performance of existing works. Unlike known approaches, our algorithms can also be used to solve a larger class of problems beyond counting. We further discuss extending our work to the sliding window model and when the dimensions’ bounds are a-priori unknown."
+#         doi: "https://doi.org/10.1145/3465480.3466925"
+#         youtube: https://youtu.be/2B6ICDERsJg
+#         speaker:
+#           name: "Rana Shahout"
+#           bio: "Rana Shahout is a Ph.D. candidate at the Technion. she is working under the supervision of Prof. Roy Friedman. Her research focuses on streaming algorithms include network monitoring and interval query capabilities for real-time network problems. She completed her BSc at the Computer Science Department at the Technion and worked at Mellanox and Yahoo."
+#       - title: Fast Recovery of Correlated Failures in Distributed Stream Processing Engines
+#         authors: 'Li Su, Yongluan Zhou'
+#         abstract: "In a large-scale cluster, correlated failures usually involve a number of nodes failing simultaneously. Although correlated failures occur infrequently, they have significant effect on systems’ availability, es- pecially for streaming applications that require real-time analysis, as repairing the failed nodes or acquiring additional ones would take a significant amount of time. Most state-of-the-art distributed stream processing systems (DSPSs) focus on recovering individual failures and do not consider the optimization for recovering correlated failure. In this work, we propose an incremental and query-centric recovery paradigm where the recovery of failed operator partitions would be carefully scheduled based on the current availability of resources, such that the outputs of queries can be recovered as early as possible. By analyzing the existing recovery techniques, we identify the challenges and propose a fault-tolerance framework that can support incremen- tal recovery with minimum overhead during the system’s normal execution. We also formulate the new problem of recovery schedul- ing under correlated failures and design algorithms to optimize the recovery latency with a performance guarantee. A comprehensive set of experiments are conducted to study the validity of our proposal."
+#         doi: "https://doi.org/10.1145/3465480.3466923"
+#         youtube: https://youtu.be/gAGE5wDTYME
+#         speaker:
+#           name: "Li Su"
+#           bio: "Li Su a senior engineer in Data Analytics and Intelligence Lab, Alibaba DAMO Academy. Before joining Alibaba, he was a postdoc in the database group at University of Copenhagen, working with Professor Yongluan Zhou."
+#   - start_slot: 18
+#     duration_slot: 1
+#     day: 2
+#     type: "break"
+#   - start_slot: 19
+#     duration_slot: 4
+#     day: 2
+#     type: "empty"
+
+
+#   - start_slot: 0
+#     duration_slot: 3
+#     day: 3
+#     text: "Test of time award talk"
+#     type: "research"
+#     chair: "Peter Pietzuch"
+#   - start_slot: 3
+#     duration_slot: 3
+#     day: 3
+#     name: "Research track 3"
+#     text: "Cloud-Native Computing"
+#     chair: "Holger Pirk"
+#     papers:
+#       - title: Distributed Transactions on Serverless Stateful Functions
+#         authors: 'Martijn de Heus, Kyriakos Psarakis, Marios Fragkoulis, Asterios Katsifodimos'
+#         abstract: "Serverless computing is currently the fastest-growing cloud services segment. The most prominent serverless offering is Function-as-a- Service (FaaS), where users write functions and the cloud automates deployment, maintenance, and scalability. Although FaaS is a good fit for executing stateless functions, it does not adequately sup- port stateful constructs like microservices and scalable, low-latency cloud applications, mainly because it lacks proper state manage- ment support and the ability to perform function-to-function calls. Most importantly, executing transactions across stateful functions remains an open problem.<br/>In this paper, we introduce a programming model and implemen- tation for transaction orchestration of stateful serverless functions. Our programming model supports serializable distributed trans- actions with two-phase commit, as well as relaxed transactional guarantees with Sagas. We design and implement our programming model on Apache Flink StateFun. We choose to build our solution on top of StateFun in order to leverage Flink’s exactly-once processing and state management guarantees. We base our evaluation on the YCSB benchmark, which we extended with transactional operations and adapted for the SFaaS programming model. Our experiments show that our transactional orchestration adds 10% overhead to the original system and that Sagas can achieve up to 34% more transactions per second than two-phase commit transactions at a sub-200ms latency."
+#         doi: "https://doi.org/10.1145/3465480.3466920"
+#         youtube: https://youtu.be/JU4g42RyiNY
+#         speaker:
+#           name: "Martijn de Heus"
+#           bio: "Martijn de Heus is a recent graduate of Delft University of Technology. His thesis research was about state management in Serverless environments."
+#       - title: A Distributed Database System for Event-based Microservices
+#         authors: 'Rodrigo Laigner, Yongluan Zhou, Marcos Antonio Vaz Salles'
+#         abstract: "Microservice architectures are an emerging industrial approach to build large scale and event-based systems. In this architectural style, an application is functionally partitioned into several small and au- tonomous building blocks, so-called microservices, communicating and exchanging data with each other via events.<br/>By pursuing a model where fault isolation is enforced at mi- croservice level, each microservice manages their own database, thus database systems are not shared across microservices. Developers end up encoding substantial data management logic in the application-tier and encountering a series of challenges on enforcing data integrity and maintaining data consistency across microservices.<br/>In this vision paper, we argue that there is a need to rethink how database systems can better support microservices and relieve the burden of handling complex data management tasks faced by programmers. We envision the design and research opportunities for a novel distributed database management system targeted at event-driven microservices."
+#         doi: "https://doi.org/10.1145/3465480.3466919"
+#         youtube: https://youtu.be/MMvvioUfGqI
+#         speaker:
+#           name: "Rodrigo Laigner"
+#           bio: "Rodrigo Laigner is a second-year PhD fellow employed in the Department of Computer Science at University of Copenhagen under the supervision of Prof. Yongluan Zhou and Associate Prof. Marcos Antonio Vaz Salles. His research targets building efficient and consistent database systems for data management requirements found in new approaches for developing distributed applications (with substantial data management logic) at the application-tier, such as microservices."
+#     type: "research"
+#   - start_slot: 6
+#     duration_slot: 1
+#     day: 3
+#     type: "break"
+#   - start_slot: 7
+#     duration_slot: 4
+#     day: 3
+#     type: "keynote"
+#     name: "Keynote 2"
+#     chair: "Letizia Tanca"
+#     keynote_index: 0
+#   - start_slot: 11
+#     duration_slot: 1
+#     day: 3
+#     type: "break"
+#   - start_slot: 12
+#     duration_slot: 3
+#     day: 3
+#     type: "lunch"
+#   - start_slot: 15
+#     duration_slot: 7
+#     day: 3
+#     type: "posters"
+#     text: "Posters & Demos + Doctoral Symposium"
+#     chair: "Stijn Vansummeren + Daniele Dell'Aglio"
+#     papers:
+#       - title: 'Poster: Towards Creating a Generalized Complex Event Processing Operator Using FlinkCEP: Architecture &amp; Benchmark'
+#         authors: 'Eleni Kougioumtzi, Antonios Kontaxakis, Antonios Deligiannakis, Yannis Kotidis'
+#         doi: "https://doi.org/10.1145/3465480.3467841"
+#         youtube: https://youtu.be/FAPzxBJp9LY
+#         speaker:
+#           name: "Eleni Kougioumtzi"
+#           bio: "Eleni Kougioumtzi is a student of Informatics at Athens University of Economics and Business. Since high school, she has a passion for Robotics and she has participated in many national and global Educational Robotics Competitions, both as a student and as a coach. Also, Eleni is a core member of Google Developer Student Clubs at her University and she has a great interest in Big Data and Artificial Intelligence. Her dream is to travel the world and make a difference."
+#       - title: 'Poster: Real-Time Processing of Geo-Distributed Financial Data'
+#         authors: 'Antonios Kontaxakis, Antonios Deligiannakis, Holger Arndt, Stefan Burkard, Claus-Peter Kettner, Elke Pelikan, Kathleen Noack'
+#         doi: "https://doi.org/10.1145/3465480.3467842"
+#         youtube: https://youtu.be/bWCn6QKIn_4
+#         speaker:
+#           name: "Antonios Deligiannakis"
+#           bio: 'Antonios Deligiannakis is a Professor of Computer Science at the School of Electrical and Computer Engineering of the Technical University of Crete, and an Adjunct Researcher at the "Athena" Research Center. His research interests are in the broad area of Big Data Management Systems, including Big Data Analytics over data streams and distributed complex event processing in large-scale systems.'
+#       - title: 'Demo: Towards Autonomous Semantic Stream Fusion For Distributed Video Streams'
+#         authors: 'Manh Nguyen Duc, Anh Le-Tuan, Manfred Hauswirth, Danh Le Phuoc'
+#         doi: "https://doi.org/10.1145/3465480.3467837"
+#         youtube: https://youtu.be/uRU-AdABmHg
+#         speaker:
+#           name: "Manh Nguyen Duc"
+#           bio: 'I am Manh Nguyen Duc, a DAAD PhD Candidate of Technical University of Berlin. My research focuses on Semantic web, Robotics and Deep learning.'
+#       - title: 'Demo: HawkEDA: A Tool for Quantifying Data Integrity Violations in Event-driven Microservices'
+#         authors: 'Prangshuman Das, Rodrigo Laigner, Yongluan Zhou'
+#         doi: "https://doi.org/10.1145/3465480.3467838"
+#         youtube: https://youtu.be/BJjZX8GbsHA
+#         speaker:
+#           name: "Prangshuman Das"
+#           bio: "I recently defended my thesis while building this tool and completed my MSc. in Computer Science from the University of Copenhagen, Denmark."
+#       - title: 'Demo: Enforcing Consistency in Microservice Architectures through Event-based Constraints'
+#         authors: 'Anna Lesniak, Rodrigo Laigner, Yongluan Zhou'
+#         doi: "https://doi.org/10.1145/3465480.3467839"
+#         youtube: https://youtu.be/p4wR7QgFLX4
+#         speaker:
+#           name: "Anna Lesniak"
+#           bio: "Anna Lesniak is a recent graduate of the University of Copenhagen in Computer Science. Her master's thesis targeted enforcing data consistency in microservice architecture by utilising a novel approach of event-based constraints. She is a software engineer at Zendesk where she works on stream processing and event-driven platforms."
+#       - title: 'Demo: Building An End-To-End BAD Application'
+#         authors: 'Shahrzad Haji Amin Shirazi, Michael J. Carey, Vassilis J. Tsotras'
+#         doi: "https://doi.org/10.1145/3465480.3467840"
+#         youtube: https://youtu.be/0AXmf4YvaKg
+#         speaker:
+#           name: "Shahrzad Haji Amin Shirazi"
+#           bio: "Shahrzad Haji Amin Shirazi is a Ph.D. student at the Department of Computer Science and Engineering at University of California Riverside. She is currently working on the Big Active Data system which is part of Apache AsterixDB."
+#       - title: 'Doctoral: Accelerating the Performance of Data Analytics using Network-centric Processing'
+#         authors: 'Bochra Boughzala'
+#         doi: "https://doi.org/10.1145/3465480.3468162"
+#         youtube: https://youtu.be/HDrz1j9EgnI
+#         speaker:
+#           name: "Bochra Boughzala"
+#           bio: "Bochra Boughzala is currently pursuing a Ph.D. degree in computer science at the University of Groningen in the Netherlands. She received her M. Sc. degree from Université du Québec à Montréal in Canada, in 2013. She then worked with Ericsson Research Montreal as a Researcher in the area of IP and Transport and Cloud technologies. She also worked with a Montreal-based startup as a Software Designer for building data center networking solutions. Her research interests include Software-Defined Networking and high-performance packet processing."
+#   - start_slot: 22
+#     duration_slot: 1
+#     day: 3
+#     type: "break"
+
+#   - start_slot: 0
+#     duration_slot: 4
+#     day: 4
+#     name: "Keynote 3"
+#     type: "keynote"
+#     keynote_index: 2
+#     chair: "Alessandro Margara"
+#   - start_slot: 4
+#     duration_slot: 1
+#     day: 4
+#     type: "break"
+#   - start_slot: 5
+#     duration_slot: 3
+#     day: 4
+#     type: "industry"
+#     name: "Invited industry talk"
+#     industry_index: 0
+#     chair: "Sabri Skhiri"
+#   - start_slot: 8
+#     duration_slot: 1
+#     day: 4
+#     type: "break"
+#   - start_slot: 9
+#     duration_slot: 4
+#     day: 4
+#     type: "industry"
+#     name: "Industry track"
+#     chair: "Gianmarco Aversano"
+#     papers:
+#       - title: 'The Synergy of Complex Event Processing and Tiny Machine Learning in Industrial IoT '
+#         authors: 'Haoyu Ren, Darko Anicic, Thomas Runkler'
+#         doi: "https://doi.org/10.1145/3465480.3466928"
+#         youtube: https://youtu.be/O6WuQqSGHcU
+#         speaker:
+#           name: "Haoyu Ren"
+#           bio: "Haoyu Ren is a PhD candidate at Siemens and technical university of munich in Germany since 2020. He has a B.S in electrical engineering from Chongqing University and a M.S. in electrical and computer engineering from the technical university of munich. Most of his work is related to industrial IoT, smart factory, tiny machine learning, and semantic techniques."
+#       - title: 'S2CE: A Hybrid Cloud and Edge Orchestrator for Mining Exascale Distributed Streams'
+#         authors: 'Nicolas Kourtellis, Herodotos Herodotou, Maciej Grzenda, Piotr Wawrzyniak, Albert Bifet'
+#         doi: "https://doi.org/10.1145/3465480.3466926"
+#         youtube: https://youtu.be/DP0uI-m1BMg
+#         speaker:
+#           name: "Nicolas Kourtellis"
+#           bio: "Nicolas Kourtellis holds a PhD in Computer Science & Engineering from the University of South Florida, USA (2012). He has done research @Yahoo Labs, USA & @Telefonica Research, Spain, on online user privacy and behavior modeling, Internet measurements and distributed systems, with 70+ published peer-reviewed papers. Lately, he focuses on CyberPrivacy (Privacy-preserving Machine Learning (ML) and Federated Learning on the edge, user online privacy and PII leaks), etc.) and CyberSafety (modeling and detecting abusive, inappropriate or fraudulent content on social media using data mining and ML methods, and how they can be applied on the edge on user-owned or network devices). He has served in many technical program committees of top conferences and journals (WWW, KDD, CIKM, ECML- PKDD, TKDD, TKDE, TPDS, etc.)."
+#       - title: 'Descriptor Based Consensus for Blockchain Transactions'
+#         authors: 'Zachary Painter, Victor Cook, Christina Peterson, Damian Dechev'
+#         doi: "https://doi.org/10.1145/3465480.3466927"
+#         youtube: https://www.youtube.com/watch?v=W7KZ_uqqFWM
+#         speaker:
+#           name: "Zachary Painter"
+#           bio: "Zachary Painter is a PhD student at the University of Central Florida. His research interests include concurrent algorithms, transactional data structures, and blockchain algorithms."
+#   - start_slot: 13
+#     duration_slot: 1
+#     day: 4
+#     type: "break"
+#   - start_slot: 14
+#     duration_slot: 3
+#     day: 4
+#     type: "lunch"
+#   - start_slot: 17
+#     duration_slot: 2
+#     day: 4
+#     type: "orga"
+#     text: "Closing remarks + awards announcements"
+#     chair: "Peter Pietzuch"
+#   - start_slot: 19
+#     duration_slot: 2
+#     day: 4
+#     type: "orga"
+#     text: "Business meeting"
+#   - start_slot: 21
+#     duration_slot: 2
+#     day: 4
+#     type: "empty"
+
