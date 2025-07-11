@@ -37,26 +37,37 @@
                     </div>
                     <div class="program-content">
                         {% if session.type == "keynote" %}
+                        {% if session.speaker.name and session.speaker.name != "" %}
                         <div class="keynote-session">
                             <h3 class="session-title">{{ session.title }}</h3>
                             <div class="keynote-header">
                                 <div class="keynote-speaker-info">
                                     <div class="speaker-photo">
+                                        {% if session.speaker.profile_url and session.speaker.profile_url != "" %}
                                         <a href="{{ session.speaker.profile_url }}" target="_blank">
                                             <img src="{{ session.speaker.image }}" alt="{{ session.speaker.name }}">
                                         </a>
+                                        {% else %}
+                                        <img src="{{ session.speaker.image }}" alt="{{ session.speaker.name }}">
+                                        {% endif %}
                                     </div>
                                     <div class="speaker-details">
                                         <h4>{{ session.speaker.name }}</h4>
                                         <p class="speaker-title">{{ session.speaker.title }}</p>
-                                        <h5>{{ session.talk.title }}</h5>
                                     </div>
                                 </div>
                             </div>
+                            {% if session.talk.abstract and session.talk.abstract != "" %}
                             <div class="keynote-abstract">
                                 <p>{{ session.talk.abstract }}</p>
                             </div>
+                            {% endif %}
                         </div>
+                        {% else %}
+                        <div class="keynote-session">
+                            <h3 class="session-title">{{ session.title }}</h3>
+                        </div>
+                        {% endif %}
 
                         {% elsif session.type == "opening" %}
                         <div class="opening-session">
@@ -95,18 +106,28 @@
                         {% elsif session.type == "panel" %}
                         <div class="panel-session">
                             <h3 class="session-title">{{ session.title }}</h3>
+                            {% if session.panelists and session.panelists.size > 0 %}
                             <div class="panel-details">
-                                <h4 class="panel-topic">Topic: {{ session.topic }}</h4>
                                 <div class="panelists">
-                                    <h5>Panelists:</h5>
                                     <ul>
                                         {% for panelist in session.panelists %}
+                                        {% if panelist.name and panelist.name != "" %}
                                         <li>{{ panelist.name }} ({{ panelist.affiliation }})</li>
+                                        {% endif %}
                                         {% endfor %}
                                     </ul>
                                 </div>
+                                {% if session.moderator and session.moderator != "" and session.moderator != "TBD" %}
                                 <p class="moderator"><strong>Moderator:</strong> {{ session.moderator }}</p>
+                                {% endif %}
                             </div>
+                            {% endif %}
+                        </div>
+
+                        {% elsif session.type == "closing" %}
+                        <div class="closing-session">
+                            <h3 class="session-title">{{ session.title }}</h3>
+                            <p class="session-chair">{{ session.chair }}</p>
                         </div>
                         {% endif %}
                     </div>
