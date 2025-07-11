@@ -7,23 +7,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Required meta tags -->
 
-  <meta name="description"
-    content="The 3rd ACM Workshop on on LEO Networking and Communication, co-located with SIGCOMM 2025 (Coimbra, Portugal).">
-  <meta name="keywords"
-    content="LEO-NET, LEO-NET2025, LEO-NET 2025, LEO, SIGCOMM, SIGCOMM 2025, low earth orbit, satellite, LEO satellite, satellite broadband, workshop, talks, research">
-  <meta name="author" content="Nitinder Mohan, Deepak Vasisht, Debopam Bhattacherjee">
+  <meta name="description" content="{{ site.data.homepage.meta.description }}">
+  <meta name="keywords" content="{{ site.data.homepage.meta.keywords }}">
+  <meta name="author" content="{{ site.data.homepage.meta.authors }}">
 
-  <meta property="og:image" content="https://leo-net-workshop.github.io/2025/img/background/bg.jpeg">
-  <meta property="og:image:width" content="1200px" />
-  <meta property="og:image:height" content="627px" />
-  <meta property="og:url" content="https://leo-net-workshop.github.io/2025/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="LEO-NET 2025" />
-  <meta property="og:description"
-    content="The 3rd ACM Workshop on on LEO Networking and Communication, co-located with SIGCOMM 2025 (Coimbra, Portugal)." />
-  <meta property="og:site_name" content="LEO-NET 2025" />
   <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM SIGCOMM {{
     site.data.conference.year }}</title>
 
@@ -36,61 +24,105 @@
 <body data-spy="scroll" data-target="#site-nav">
   {% include header.html %}
 
-  <section id="about" class="section about" style="display: block;">
-    <div class="container">
-      <h3 style="text-align:center;" class="section-title">{{ site.data.conference.title }}
+  <section class="section">
+    <div class="article-content">
+      <h3>{{ site.data.conference.title }}</h3>
 
-      </h3>
-
-      <p align="justify">How do we connect the next billion users to the Internet? How do we capture high-resolution
-        pictures of the Earth, or enable massive-scale IoT across industries? How do we enable
-        high-capacity Internet in the remotest regions of the globe? Over the past decade, significant
-        reductions in satellite production and launch costs have opened up a new `space’ – access to
-        Low-Earth Orbits or LEO. Massive constellations from industry consisting of hundreds to tens of
-        thousands of low-flying satellites are being rolled out. The wide-scale LEO satellite deployment
-        and interest present a unique challenge and opportunity to bring reliable Internet connectivity to
-        the remotest regions of the Earth. As such, the research community needs the right tools to
-        explore various unforeseen opportunities (like global coverage, low-latency connectivity, and
-        high-resolution imagery) and challenges (like extreme mobility, bottlenecked downlinks, and
-        sparse ground infrastructure) that come with LEO deployments.</p>
-
-
-      <p align="justify">Overall, LEO-NET aims to open new avenues for networking researchers to explore different
-        aspects of LEO constellation operation and performance and shape the state of LEO satellite
-        communication. We see multiple strong verticals in LEO – understanding the operation and
-        potential bottlenecks in rapidly growing LEO constellation offerings, novel network protocol
-        extensions that leverage the highly dynamic LEO links, applications like satellite imagery and
-        IoT, LEO compute, and several others. We expect strong submissions along all of these
-        verticals addressing many open challenges across the stack.</p>
-
-      <p id="listing" align="justify">In addition to the regular papers, the program of {{
-        site.data.conference.short_title }} {{ site.data.conference.year }} will also include keynote and panel
-        discussion including experts in LEO networking research.</li>
-
-        <br>
-
-        {% if site.data.keynotes.size > 0 %}
-      <p><b>Keynote Speakers:</b><br />
-        {% for keynote in site.data.keynotes %}
-        {{ keynote.academic_title }} {{ keynote.firstname }} {{ keynote.lastname }}, {{ keynote.affiliation }}
+      <div class="feature-grid">
+        {% for feature in site.data.features %}
+        <div class="feature-item">
+          <h4>{{ feature.title }}</h4>
+          <p>{{ feature.description }}</p>
+        </div>
         {% endfor %}
+      </div>
+
+      {% for paragraph in site.data.homepage.paragraphs %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+
+      <p>{{ site.data.homepage.additional_info }}</p>
+
+      {% if site.data.keynotes.size > 0 %}
+      <h4>Keynote Speakers</h4>
+      {% for keynote in site.data.keynotes %}
+      <p><strong>{{ keynote.academic_title }} {{ keynote.firstname }} {{ keynote.lastname }}</strong>, {{
+        keynote.affiliation }}</p>
+      {% endfor %}
+      {% endif %}
+    </div>
+
+    <div class="dates-section">
+      <div class="dates-content">
+        {% if site.data.dates.submission %}
+        <div class="date-item">
+          <h4>Paper Submission</h4>
+          <p>{{ site.data.dates.submission }}</p>
+        </div>
         {% endif %}
-
-        <br />
-      <p><b>IMPORTANT DATES:</b><br />
-        Paper submission: {{ site.data.dates.submission }}<br />
-        Acceptance notification: {{ site.data.dates.notification }}<br />
-        Camera ready: {{ site.data.dates.camera_ready }}<br />
-        Workshop: {{ site.data.conference.dates }}</p>
-
-    </div><!-- /.container -->
+        {% if site.data.dates.notification %}
+        <div class="date-item">
+          <h4>Acceptance Notification</h4>
+          <p>{{ site.data.dates.notification }}</p>
+        </div>
+        {% endif %}
+        {% if site.data.dates.camera_ready %}
+        <div class="date-item">
+          <h4>Camera Ready</h4>
+          <p>{{ site.data.dates.camera_ready }}</p>
+        </div>
+        {% endif %}
+        {% if site.data.dates.workshop %}
+        <div class="date-item">
+          <h4>Workshop</h4>
+          <p>{{ site.data.dates.workshop }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; {{ site.data.conference.year }} {{ site.data.conference.short_title }}. All rights reserved.</p>
+        <p>Part of <a href="https://conferences.sigcomm.org/sigcomm/{{ site.data.conference.year }}/"
+            target="_blank">ACM SIGCOMM {{ site.data.conference.year }}</a></p>
+      </div>
+    </div>
+  </footer>
 
   <!-- import navigation bar and header -->
   <script src="//code.jquery.com/jquery.min.js"></script>
-
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navbar = document.querySelector('.navbar-custom');
+      const siteBranding = document.querySelector('.site-branding');
+      const siteHeader = document.querySelector('#site-header');
+
+      window.addEventListener('scroll', function () {
+        const scrollY = window.scrollY;
+        const headerHeight = siteHeader ? siteHeader.offsetHeight : 100;
+
+        // Show/hide navbar logo based on scroll position
+        if (scrollY > headerHeight * 0.8) {
+          navbar.classList.add('navbar-solid');
+          if (siteBranding) {
+            siteBranding.classList.add('visible');
+          }
+        } else {
+          navbar.classList.remove('navbar-solid');
+          if (siteBranding) {
+            siteBranding.classList.remove('visible');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

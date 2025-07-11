@@ -5,30 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>LEO-NET 2025 | ACM MobiCom 2025</title>
+    <title>LEO-NET 2025 | ACM SIGCOMM 2025</title>
 
     <!-- css -->
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <style>
-        .grey-shaded-box {
-            background-color: #f2f2f2;  /* Grey shade */
-            padding: 15px;             /* Space inside the box */
-            border: 1px solid #e0e0e0; /* Optional border */
-            border-radius: 5px;        /* Rounded corners */
-            font-family: Arial, sans-serif; /* Optional font styling */
-	    font-size: 18px;
-        }
-    </style>
-	
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
-    <!-- navigation bar and header placeholder -->
+    <!-- Using small header instead of full header -->
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
 
             <!-- logo -->
@@ -47,45 +35,29 @@
         </div><!-- /.navbar-header -->
 
         <div class="collapse navbar-collapse" id="navbar-items">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
                 <!-- navigation menu -->
                 <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="program.html#program">Program</a></li> -->
                 <li><a href="cfp.html">Call for Papers</a></li>
-                <!--                     <li><a href="cfp-poster-demo.html">Call for Posters and Demos</a></li> -->
-
-                <!--                     <li><a href="camera-ready.html#camera-ready">Camera-ready Instructions</a></li> -->
+                <li><a href="program.html">Program</a></li>
                 <li><a href="committee.html">Committees</a></li>
                 <li><a href="previous_editions.html">Previous Editions</a></li>
-                <!-- <li><a href="accepted-papers.html#accepted">Accepted Papers</a></li> -->
-                <!--<li><a href="accepted.html#accepted">Accepted Papers</a></li>-->
-                <!--<li><a href="keynote.html">Keynote</a></li>-->
             </ul>
         </div>
     </div><!-- /.container -->
 </nav>
 
-<header id="site-header" class="site-header valign-center" height="100px">
-    <div class="intro">
-
-        <h1>LEO-NET 2025</h1>
-
-        <h2>The 3<sup>rd</sup> ACM Workshop on LEO Networking and Communication 2025</h2>
-
-        <br class="mobile-break">
-        <h2>Coimbra, Portugal<br>September 8<sup>th</sup>, 2025</h2>
-
-        <!-- <br class="mobile-break"> -->
-        <p><small>Co-located with <a href="https://conferences.sigcomm.org/sigcomm/2025/" target="_blank"><font color="FFFFFF">ACM SIGCOMM 2025</font></a></small></p>
-
-        <br class="mobile-break" style="line-height: 5px" />
-
-
-
+<!-- Compact Header - For Other Pages -->
+<header class="compact-header">
+    <div class="container">
+        <div class="compact-intro">
+            <h1>LEO-NET 2025</h1>
+            <p>The 3<sup>rd</sup> ACM Workshop on LEO Networking and Communication 2025</p>
+        </div>
     </div>
 </header>
 
-    <section id="program" class="section facts" style="display: block;">
+    <section id="program" class="section facts">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -93,329 +65,353 @@
                 </div>
             </div>
 
-            <!--             To be published. -->
-
-            <table border="0" cellspacing="10" valign="top">
-                <tr>
-                    <th></th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td> </td>
-                </tr>
-                <tr>
+            <div class="program-container">
                 
-                    <td style="vertical-align:text-top;">09:00 - 09:05 </td>
+                <div class="program-item ">
+                    <div class="program-time">
+                        <span>08:50 - 09:00</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="opening-session">
+                            <h3 class="session-title">Workshop Starts + Welcome Address</h3>
+                            <p class="session-chair">Chair: Presentation by Chairs</p>
+                        </div>
 
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Opening<br>
-                                <font size="2" , style="font-weight:normal">Chair: Deepak Vasisht (University of Illinois Urbana-Champaign)</font>
-                            </h3><br>
-                        </ulx>
-                    </td>
-        
-                </tr>
-                <!--<tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>-->
+                        
+                    </div>
+                </div>
                 
-                <tr>
-                    <td style="vertical-align:text-top;">09:05 - 10:00 </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Keynote &nbsp; &nbsp; &nbsp; &nbsp; <br>
-                                <!--<font size="2" , style="font-weight:normal">Session Chair: (TBA)</font> -->
-                            </h3>
-                            <div class="col-sm-3 col-md-3">
-                                <figure class="thumbnail">
-                                    <a href="https://www.danyork.com/"
-                                        target="_blank"><img src="img/speakers/danyork_2024_1-square.JPG"
-                                            class="img-responsive" alt="Image"></a>
-                                    <figcaption class="caption text-center">
-                                        <h3>Dan York<br>
-                                            <small>Senior Advisor at the Internet Society</small>
-                                        </h3>
-                                    </figcaption>
-                                </figure>
+                <div class="program-item ">
+                    <div class="program-time">
+                        <span>09:00 - 10:00</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        
+                        <div class="keynote-session">
+                            <h3 class="session-title">Keynote: Cloud about the clouds</h3>
+                            <div class="keynote-header">
+                                <div class="keynote-speaker-info">
+                                    <div class="speaker-photo">
+                                        
+                                        <a href="https://www.paulomilheiromendes.com/about-me" target="_blank">
+                                            <img src="img/speakers/Paulo-Mendes.jpeg" alt="Dr. Paulo Mendes">
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="speaker-details">
+                                        <h4>Dr. Paulo Mendes</h4>
+                                        <p class="speaker-title">Airbus Research</p>
+                                    </div>
+                                </div>
                             </div>
-			 <b>Title: LEOs in 2024: Space Lasers, Policies, Coverage, and Connectivity</b><br>
-				Over 7,000 satellites are now in low Earth orbit (LEO) with 10s of thousands more planned over the next few years. Where is this all going? High-speed, low-latency connectivity is changing people’s lives and helping connect so many of the unconnected, but at what cost? What are the opportunities and the challenges with providing Internet access from space? Two years ago the Internet Society published a perspective on the state of the LEO-based Internet access industry. In this session, Dan York will look at all that has happened over the past two years in terms of technology and policy, and also the many lingering issues and areas where more research is needed. He’ll explore the major barriers for operators and the new opportunities such as direct-to-device. There is huge potential for systems in LEO to bring the Internet to more people - if we are okay with the tradeoffs! <br>
-                        </ulx>
-                    </td>
-                </tr>
+                            
+                            <div class="keynote-abstract">
+                                <p>Currently, a mere 20% of data processing and analysis occurs locally, with a dominant 80% centralized in data centers. However, this paradigm is shifting. Predictions indicate that within five years, edge computing will handle the majority of data processing and analytics. This trend is driven by the escalating demand for real-time data access and the need to manage the burgeoning data volumes generated at the network's edge, exemplified by Earth Observation Services. Integrating edge computing into space platforms brings processing closer to data generation, significantly reducing communication bottlenecks and accelerating data analysis. This approach alleviates the data load transmitted to Earth, enabling faster decision-making and response times. Extending this concept, space edge computing can evolve into a robust space cloud infrastructure, facilitated by high-speed interconnectivity and distributed computing frameworks. This platform would offer in-space computing resources and services, fostering flexible data sharing and task distribution. Beyond basic edge computing, it could support complex data analysis and storage, providing large-scale computing services that complement terrestrial cloud infrastructure. This presentation will delve into the concepts of space edge and cloud computing, exploring the inherent challenges and the transformative opportunities they present.</p>
+                            </div>
+                            
+                        </div>
+                        
 
-                <tr>
-                    <td style="vertical-align:text-top;">10:00 - 10:30 </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Coffee Break<br>
-                        </ulx>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
+                        
+                    </div>
+                </div>
                 
-                <tr>
-                    <td style="vertical-align:text-top;">10:30 - 11:30 &nbsp; &nbsp; </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Technical Session 1 : Will it always work?<br>
-                                <!--<font size="2" , style="font-weight:normal">Session Chair: TBA</font>-->
-                            </h3><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>LEO Satellite Network Resilience Analysis: A Focus on Critical Satellites</b><br>
-                            <font size="2">Zhuoyuan Li (Rensselaer Polytechnic Institute), Wenyi Morty Zhang, Wenhao Chen, Yiyan Hu (UC San Diego), Weyl Lu (UC Davis)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>Observing the Skies – Ground-Based Cloud Detection for Evaluating the Impact of Clouds on LEO Communications</b><br>
-                            <font size="2">Eric Lanfer, Dominic Laniewski, Malte Wehmeier, Nils Aschenbruck (Osnabrück University)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>Weathering a Solar Superstorm: Starlink Performance during the May 2024 Storm </b><br>
-                            <font size="2">Alagappan Ramanathan (University of California, Irvine), Sangeetha Abdu Jyothi (University of California, Irvine, VMware Research) </font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>Choosing the Right Spot: How Well Are LEO Satellite Gateways Placed? Starlink Case-Study</b><br>
-                            <font size="2">Abdullahi Kutiriko Abubakar, Mohamed Kassem, Nishanth Sastry (University of Surrey)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
+                <div class="program-item ">
+                    <div class="program-time">
+                        <span>10:00 - 11:00</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="technical-session">
+                            <h3 class="session-title">Technical Session 1: Architectural Innovations for the Next Internet-from-Space</h3>
+                            
+                            <div class="papers-list">
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">The Internet from Space, Reimagined – Leveraging Altitude for Efficient Global Coverage</h4>
+                                    <p class="paper-authors">Chris Misa, Ramakrishnan Durairajan (University of Oregon)</p>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">A Distributed Data Store in Orbit</h4>
+                                    <p class="paper-authors">Joerg Ott (Technische Universität München); Jussi Kangasharju (University of Helsinki); Nitinder Mohan (TU Delft)</p>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">Optimising LEO Network for the People</h4>
+                                    <p class="paper-authors">Prince Bhardwaj, Abdullahi K. Abubakar, Nishanth Sastry (University of Surrey)</p>
+                                </a>
+                                
+                                
+                            </div>
+                        </div>
 
-                <tr>
-                    <td style="vertical-align:text-top;">11:30 - 12:30 &nbsp; &nbsp; </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Technical Session 2: Something old, and something new<br>
-                                <!--<font size="2" , style="font-weight:normal">Session chair: TBA</font>-->
-                            </h3><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>Do We Need a Million Satellites in Orbit?</b><br>
-                            <font size="2">Demi Lei, Ahmed Saeed (Georgia Tech)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>An In-Depth Investigation of LEO Satellite Topology Design Parameters</b><br>
-                            <font size="2">Wenyi Morty Zhang (UC San Diego), Zihan Xu (Carnegie Mellon University), Sangeetha Abdu Jyothi (University of California, Irvine, VMware Research)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>On the Feasibility of Laser Inter-satellite Links for Low-latency High Frequency Trading</b><br>
-                            <font size="2">Vaibhav Singh, Akshay Gadre (University of Washington)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>A Survey on Direct-to-Device Satellite Communications: Advances, Challenges, and Prospects</b><br>
-                            <font size="2">Hannaneh B. Pasandi (University of California, Berkeley and Inria), Juan A. Fraire (Inria), Sylvia Ratnasamy (University of California, Berkeley), Herve Rivano (Inria)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>12:30 - 14:00</td>
-                    <td>
-                        <h3>Lunch</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-
-                 <tr>
-                    <td style="vertical-align:text-top;">14:00 - 15:00 &nbsp; &nbsp; </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Technical Session 3: How does anything work?<br>
-                                <!--<font size="2" , style="font-weight:normal">Session chair: TBA</font>-->
-                            </h3><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>Trajectory-based Serving Satellite Identification with User Terminal's Field-of-View</b><br>
-                            <font size="2">Ali Ahangarpour, Jinwei Zhao, Jianping Pan (University of Victoria) </font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>Segment Routing based on Geographic Checkpoints</b><br>
-                            <font size="2">Valentin Hartig, Marcin Bosk (Technical University of Munich), Nitinder Mohan (Delft University of Technology), Paulo Mendes (Airbus)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>Starlink Performance through the Edge Router Lens</b><br>
-                            <font size="2">Sarah-Michelle Hammer, Vamsi Addanki, Max Franke, Stefan Schmid (TU Berlin)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;"></td>
-                    <td>
-                        <ulx>
-                            <b>StarQUIC: Tuning Congestion Control Algorithms for QUIC over LEO Satellite Networks</b><br>
-                            <font size="2">Victor Kamel, Jinwei Zhao, Daoping Li, Jianping Pan (University of Victoria)</font><br>
-                        </ulx>
-                    </td>
-                </tr>
+                        
+                    </div>
+                </div>
                 
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;">15:00 - 16:00 &nbsp; &nbsp; </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Panel Discussion & Closing Remarks<br/><br/>
-                                <font size="5" , style="font-weight:normal"><b>Topic: Challenges on path towards integrated satellite networks.</b></font><br/>
-                                <font size="3" , style="font-weight:normal"><b>Panelists:</b><br/> Akshay Gadre (University of Washington),<br/> Dan York (Internet Society),<br/> J Pan (University of Victoria),<br/> Mahesh K. Marina (The University of Edinburgh).</font><br/>
-                                <font size="3" , style="font-weight:normal"><b>Moderator:</b> Deepak Vasisht (University of Illinois Urbana-Champaign)</font>
-                            </h3><br>
-                        </ulx>
-                    </td>
-                </tr>
+                <div class="program-item program-break">
+                    <div class="program-time">
+                        <span>11:00 - 11:25</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="break-session">
+                            <h3 class="session-title">Coffee Break</h3>
+                        </div>
 
-                <!--<tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>-->
+                        
+                    </div>
+                </div>
+                
+                <div class="program-item ">
+                    <div class="program-time">
+                        <span>11:25 - 12:45</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="technical-session">
+                            <h3 class="session-title">Technical Session 2: Performance Characterization & Measurements</h3>
+                            
+                            <div class="papers-list">
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">FjordLink – Comparison of Starlink and 5G Networks for Tele-operated Vessel Control</h4>
+                                    <p class="paper-authors">Birkan Denizer (Kiel University); Nils Dohse (ADDIX GmbH); Olaf Landsiedel (Hamburg University of Technology & Kiel University)</p>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">Better Fill Up Your Pipe – Revisiting Starlink's Burst Characterization</h4>
+                                    <p class="paper-authors">Till Zimmermann, Eric Lanfer, Dominic Laniewski, Simon Brinkmann, Nils Aschenbruck (Osnabrück University)</p>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">A Detailed Characterization of Starlink One-way Delay</h4>
+                                    <p class="paper-authors">Johan Garcia, Simon Sundberg (Karlstad University); Anna Brunstrom (Karlstad University and University of Malaga)</p>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">All Roads Lead to Roman-HitchHiking – Global Outage Detection for LEO Networks</h4>
+                                    <p class="paper-authors">Manda Tran, Khiet Huynh, Dravya Jain, Dylan Truong, Sirapop Theeranantachai (UCLA); Beichuan Zhang (University of Arizona); Lixia Zhang, Liz Izhikevich (UCLA)</p>
+                                </a>
+                                
+                                
+                            </div>
+                        </div>
 
-                <!--<tr>
-                    <td style="vertical-align:text-top;">16:00 - 16:30 </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Coffee Break<br>
-                        </ulx>
-                    </td>
-                    
-                </tr>-->
+                        
+                    </div>
+                </div>
+                
+                <div class="program-item program-break">
+                    <div class="program-time">
+                        <span>12:45 - 14:00</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="break-session">
+                            <h3 class="session-title">Lunch</h3>
+                        </div>
 
-                <!--<tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;">16:30 - 17:30 &nbsp; &nbsp; </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Keynote 2/Crowd Discussion<br>
-                                <font size="2" , style="font-weight:normal">Chair: (TBA)</font>
-                            </h3><br>
-                        </ulx>
-                    </td>
-                </tr>
+                        
+                    </div>
+                </div>
+                
+                <div class="program-item ">
+                    <div class="program-time">
+                        <span>14:00 - 14:40</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="technical-session">
+                            <h3 class="session-title">Technical Session 3: Experimentation & Monitoring Platforms</h3>
+                            
+                            <div class="papers-list">
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">How LLM Saved Me from Struggling with Experiment Reproduction ("Laser")</h4>
+                                    <p class="paper-authors">Yibo Wang, Yunan Hou, Zeqi Lai, Hewu Li, Qian Wu, Jun Liu, Yuanjie Li, Xin Xie (Tsinghua University); Zhifeng Han (Xidian University)</p>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">MOSAIC – Piecing Together 5G and LEOs for NTN Integration Experimentation</h4>
+                                    <p class="paper-authors">Revika Anand, Edward Austin, Charalampos Rotsos, Paul Smith, Nicholas Race (Lancaster University)</p>
+                                </a>
+                                
+                                
+                            </div>
+                        </div>
 
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;">17:30 - 17:35 &nbsp; &nbsp; </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Closing Remarks<br>
-                                <font size="2" , style="font-weight:normal">Chair: Deepak Vasisht (University of Illinois Urbana-Champaign)</font>
-                            </h3><br>
-                        </ulx>
-                    </td>
-                </tr>-->
+                        
+                    </div>
+                </div>
+                
+                <div class="program-item ">
+                    <div class="program-time">
+                        <span>14:40 - 15:45</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="panel-session">
+                            <h3 class="session-title">Panel Discussion: To be Decided</h3>
+                            
+                            <div class="panel-details">
+                                <div class="panelists">
+                                    <ul>
+                                        
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
 
-            </table>
+                        
+                    </div>
+                </div>
+                
+                <div class="program-item program-break">
+                    <div class="program-time">
+                        <span>15:45 - 16:10</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="break-session">
+                            <h3 class="session-title">Coffee Break</h3>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                
+                <div class="program-item ">
+                    <div class="program-time">
+                        <span>16:10 - 17:10</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="technical-session">
+                            <h3 class="session-title">Technical Session 4: Environmental Resilience of LEO Links</h3>
+                            
+                            <div class="papers-list">
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">Simulation and Comparison of Vehicle-Satellite Connectivity under a 3D Foliage Environment</h4>
+                                    <p class="paper-authors">Kevin T. Li, Christian A. Hofmann, Andreas Knopp (University of the Bundeswehr Munich)</p>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">An Investigation of Starlink's Performance during the May 2024 Solar Super-storm</h4>
+                                    <p class="paper-authors">Suvam Basak (PhD Candidate, Indian Institute of Technology Kanpur); Amitangshu Pal (Indian Institute of Technology Kanpur); Debopam Bhattacherjee (Microsoft Research India)</p>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">A Deep Dive into the Impact of Solar Storms on LEO Satellite Networks</h4>
+                                    <p class="paper-authors">Eunju Kang, Alagappan Ramanathan, Sangeetha Abdu Jyothi (University of California, Irvine)</p>
+                                </a>
+                                
+                                
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                
+                <div class="program-item ">
+                    <div class="program-time">
+                        <span>17:10 - 17:55</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        
+                        <div class="keynote-session">
+                            <h3 class="session-title">Keynote 2: To be Decided</h3>
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+                
+                <div class="program-item ">
+                    <div class="program-time">
+                        <span>17:55 - 18:00</span>
+                    </div>
+                    <div class="program-content">
+                        
+                        <div class="opening-session">
+                            <h3 class="session-title">Workshop Ends + Award</h3>
+                            <p class="session-chair">Chair: Presentation</p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 LEO-NET. All rights reserved.
+                </p>
+                <p>Part of <a href="https://conferences.sigcomm.org/sigcomm/2025/"
+                        target="_blank">ACM SIGCOMM 2025</a></p>
+            </div>
+        </div>
+    </footer>
 
     <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.querySelector('.navbar-custom');
+            const siteBranding = document.querySelector('.site-branding');
+
+            // Always show logo on non-home pages
+            if (siteBranding) {
+                siteBranding.classList.add('visible');
+            }
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('navbar-solid');
+                } else {
+                    navbar.classList.remove('navbar-solid');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
