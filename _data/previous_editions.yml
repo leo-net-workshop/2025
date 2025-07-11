@@ -1,0 +1,10 @@
+intro: "LEO-NET has been bringing together researchers and practitioners to explore the challenges and opportunities in LEO satellite networking since 2023."
+
+editions:
+  - year: 2024
+    url: "https://leo-net-workshop.github.io/2024/"
+    description: "The second workshop was held in conjunction with ACM SIGCOMM 2024, continuing to advance the field of LEO satellite networking and communication research."
+
+  - year: 2023
+    url: "https://leo-net-workshop.github.io/2023/"
+    description: "The inaugural workshop established LEO-NET as a premier venue for discussing the latest developments in low earth orbit satellite networks and their applications."
