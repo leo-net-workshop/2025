@@ -207,22 +207,30 @@
 
         <div class="dates-section">
             <div class="dates-content">
+                {% if site.data.dates.submission %}
                 <div class="date-item">
                     <h4>Paper Submission</h4>
                     <p>{{ site.data.dates.submission }}</p>
                 </div>
+                {% endif %}
+                {% if site.data.dates.notification %}
                 <div class="date-item">
                     <h4>Acceptance Notification</h4>
                     <p>{{ site.data.dates.notification }}</p>
                 </div>
+                {% endif %}
+                {% if site.data.dates.camera_ready %}
                 <div class="date-item">
                     <h4>Camera Ready</h4>
                     <p>{{ site.data.dates.camera_ready }}</p>
                 </div>
+                {% endif %}
+                {% if site.data.dates.workshop %}
                 <div class="date-item">
                     <h4>Workshop</h4>
-                    <p>{{ site.data.conference.dates }}</p>
+                    <p>{{ site.data.dates.workshop }}</p>
                 </div>
+                {% endif %}
             </div>
         </div>
     </section>

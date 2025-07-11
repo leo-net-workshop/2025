@@ -1039,78 +1039,719 @@ ul li {
   animation-delay: 0.4s !important;
 }
 
-/* Responsive fixes */
-@media (max-width: 768px) {
-  .article-content {
-    padding: 0 1rem !important;
-  }
-
-  .feature-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
-  }
-
-  .dates-content {
-    grid-template-columns: 1fr !important;
-    padding: 0 1rem !important;
-  }
-
-  .date-item {
-    padding: 2rem 1rem !important;
-  }
+/* Modern Program Page Styles - SCOPED TO PROGRAM PAGE ONLY */
+#program .program-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* CRITICAL: Fix all other pages layout issues */
-
-/* Compact header for non-home pages */
-.compact-header {
-  background: var(--primary-color) !important;
-  padding: 8rem 0 4rem !important;
-  text-align: center !important;
-  color: white !important;
-  position: relative !important;
-  overflow: hidden !important;
+#program .program-item {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #e5e7eb;
+  position: relative;
 }
 
-.compact-header::before {
-  content: "" !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
+#program .program-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-primary);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom;
+}
+
+#program .program-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(147, 51, 234, 0.12);
+  border-color: var(--accent-light);
+}
+
+#program .program-item:hover::before {
+  transform: scaleY(1);
+}
+
+#program .program-time {
+  background: #f8fafc;
+  padding: 1.5rem;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #e5e7eb;
+  position: relative;
+}
+
+#program .program-time span {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+  color: var(--accent-color);
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+#program .program-content {
+  flex: 1;
+  padding: 1.5rem 2rem;
+}
+
+/* Fix Opening Session Title Styling - Make Consistent with Other Sessions */
+#program .opening-session .session-title {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+#program .opening-session .session-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100px;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+/* Fix Break Session Title Consistency */
+#program .break-session .session-title {
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  position: relative;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+#program .break-session .session-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 120px;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+/* Ensure All Session Titles Have Consistent Base Styling */
+#program .keynote-session .session-title,
+#program .technical-session .session-title,
+#program .panel-session .session-title,
+#program .opening-session .session-title,
+#program .break-session .session-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  position: relative;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.75rem;
+}
+
+/* Special keynote styling with purple accent */
+#program .keynote-session .session-title {
+  font-size: 1.9rem;
+  color: var(--accent-color);
+}
+
+#program .keynote-session .session-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 4px;
   background: linear-gradient(
     135deg,
-    rgba(147, 51, 234, 0.1) 0%,
-    rgba(167, 85, 247, 0.05) 100%
-  ) !important;
-  z-index: 1 !important;
+    var(--accent-color) 0%,
+    var(--accent-light) 100%
+  );
+  border-radius: 2px;
 }
 
-.compact-header .container {
-  position: relative !important;
-  z-index: 2 !important;
-  max-width: 1000px !important;
-  margin: 0 auto !important;
-  padding: 0 2rem !important;
+/* Technical session styling */
+#program .technical-session .session-title {
+  color: var(--text-primary);
 }
 
-.compact-intro h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem) !important;
-  font-weight: 800 !important;
-  margin-bottom: 1rem !important;
-  color: white !important;
-  letter-spacing: -0.03em !important;
+#program .technical-session .session-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
 }
 
-.compact-intro p {
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem) !important;
-  color: rgba(255, 255, 255, 0.9) !important;
-  margin: 0 !important;
-  font-weight: 500 !important;
+/* Panel session styling */
+#program .panel-session .session-title {
+  color: var(--text-primary);
 }
 
-/* Fix committee page layout */
+#program .panel-session .session-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(
+    135deg,
+    var(--accent-light) 0%,
+    var(--accent-color) 100%
+  );
+  border-radius: 2px;
+}
+
+/* Fix Papers Layout to Use Single Row as Requested */
+#program .papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+#program .paper-item {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+#program .paper-item:hover {
+  text-decoration: none;
+}
+
+/* Different hover effects for each paper */
+#program .paper-item:nth-child(1):hover {
+  background: rgba(147, 51, 234, 0.03);
+  border-color: var(--accent-color);
+  transform: translateX(6px) scale(1.01);
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.15);
+}
+
+#program .paper-item:nth-child(2):hover {
+  background: rgba(168, 85, 247, 0.03);
+  border-color: var(--accent-light);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 6px 16px rgba(168, 85, 247, 0.15);
+}
+
+#program .paper-item:nth-child(3):hover {
+  background: rgba(124, 58, 237, 0.03);
+  border-color: var(--accent-dark);
+  transform: translateX(-4px) translateY(-2px) scale(1.01);
+  box-shadow: 0 5px 14px rgba(124, 58, 237, 0.15);
+}
+
+#program .paper-item:nth-child(4):hover {
+  background: rgba(147, 51, 234, 0.04);
+  border-color: var(--accent-color);
+  transform: translateX(4px) translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(147, 51, 234, 0.12);
+}
+
+/* Dynamic left border effects for each paper */
+#program .paper-item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    var(--accent-color),
+    var(--accent-light)
+  );
+  border-radius: 0 3px 3px 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#program .paper-item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(
+    to bottom,
+    var(--accent-light),
+    var(--accent-color)
+  );
+  border-radius: 0 4px 4px 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#program .paper-item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    var(--accent-dark),
+    var(--accent-color)
+  );
+  border-radius: 0 3px 3px 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#program .paper-item:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: var(--gradient-primary);
+  border-radius: 0 5px 5px 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#program .paper-item:hover::before {
+  opacity: 1;
+}
+
+/* Enhanced Paper Title Interactions */
+#program .paper-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  transition: all 0.3s ease;
+}
+
+#program .paper-item:nth-child(1):hover .paper-title {
+  color: var(--accent-color);
+  transform: translateX(2px);
+}
+
+#program .paper-item:nth-child(2):hover .paper-title {
+  color: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+#program .paper-item:nth-child(3):hover .paper-title {
+  color: var(--accent-dark);
+  transform: translateX(-1px);
+}
+
+#program .paper-item:nth-child(4):hover .paper-title {
+  color: var(--accent-color);
+  transform: scale(1.02);
+}
+
+#program .paper-authors {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#program .opening-session .session-chair {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  background: linear-gradient(
+    135deg,
+    rgba(147, 51, 234, 0.05) 0%,
+    rgba(168, 85, 247, 0.08) 100%
+  );
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid rgba(147, 51, 234, 0.2);
+  transition: all 0.3s ease;
+}
+
+#program .opening-session .session-chair:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(147, 51, 234, 0.08) 0%,
+    rgba(168, 85, 247, 0.12) 100%
+  );
+  border-color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+/* Fix Break/Lunch Session Colors to Match Purple Theme */
+#program .program-break {
+  background: linear-gradient(
+    135deg,
+    rgba(147, 51, 234, 0.04) 0%,
+    rgba(168, 85, 247, 0.06) 100%
+  );
+  border: 1px solid rgba(147, 51, 234, 0.2);
+}
+
+#program .program-break .program-time {
+  background: linear-gradient(
+    135deg,
+    rgba(147, 51, 234, 0.08) 0%,
+    rgba(168, 85, 247, 0.1) 100%
+  );
+  border-right-color: rgba(147, 51, 234, 0.2);
+}
+
+#program .program-break .program-time span {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+/* Enhanced Session Chair Styling */
+#program .session-chair {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background: rgba(147, 51, 234, 0.04);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent-light);
+  display: inline-block;
+}
+
+/* Technical session specific chair styling */
+#program .technical-session .session-chair {
+  background: rgba(147, 51, 234, 0.05);
+  border-left-color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* Keynote session specific chair styling */
+#program .keynote-session .session-chair {
+  background: rgba(168, 85, 247, 0.05);
+  border-left-color: var(--accent-light);
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* Panel session specific chair styling */
+#program .panel-session .session-chair {
+  background: rgba(124, 58, 237, 0.05);
+  border-left-color: var(--accent-dark);
+  font-weight: 600;
+}
+
+/* Enhanced Keynote Session */
+#program .keynote-session {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#program .keynote-speaker-info {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+#program .speaker-photo {
+  flex-shrink: 0;
+}
+
+#program .speaker-photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--accent-light);
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.1);
+}
+
+#program .speaker-details {
+  flex: 1;
+}
+
+#program .speaker-details h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+#program .speaker-title {
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#program .speaker-details h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: var(--accent-color);
+  line-height: 1.3;
+}
+
+#program .keynote-abstract {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+#program .keynote-abstract p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Simplified Panel Session Styles */
+#program .panel-session {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#program .panel-details {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+#program .panel-topic {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  letter-spacing: -0.01em;
+}
+
+#program .panelists {
+  margin-bottom: 1rem;
+}
+
+#program .panelists h5 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+#program .panelists ul {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#program .panelists li {
+  margin-bottom: 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+  padding-left: 1rem;
+}
+
+#program .panelists li::before {
+  display: none; /* Remove emoji icons */
+}
+
+#program .panelists li:hover {
+  background: #f3f4f6;
+  border-color: var(--accent-light);
+  transform: translateX(2px);
+}
+
+#program .moderator {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--text-secondary);
+  padding: 0.75rem 1rem;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  font-weight: 500;
+}
+
+#program .moderator strong {
+  color: var(--accent-color);
+}
+
+/* Remove all emoji icons from session titles */
+#program .keynote-session .session-title::before,
+#program .technical-session .session-title::before,
+#program .panel-session .session-title::before,
+#program .opening-session .session-title::before,
+#program .break-session .session-title::before {
+  display: none;
+}
+
+/* Enhanced animations */
+#program .program-item {
+  animation: slideInUp 0.4s ease-out;
+  animation-fill-mode: both;
+}
+
+#program .program-item:nth-child(1) {
+  animation-delay: 0.05s;
+}
+#program .program-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+#program .program-item:nth-child(3) {
+  animation-delay: 0.15s;
+}
+#program .program-item:nth-child(4) {
+  animation-delay: 0.2s;
+}
+#program .program-item:nth-child(5) {
+  animation-delay: 0.25s;
+}
+#program .program-item:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+/* Responsive Adjustments for Program Page */
+@media (max-width: 1024px) {
+  #program .program-container {
+    margin: 2rem 1rem;
+  }
+
+  #program .keynote-speaker-info {
+    gap: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  #program .speaker-photo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  #program .program-item {
+    flex-direction: column;
+  }
+
+  #program .program-time {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    min-width: 100%;
+    padding: 1rem;
+  }
+
+  #program .program-content {
+    padding: 1.5rem;
+  }
+
+  #program .keynote-speaker-info {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  #program .speaker-details {
+    text-align: center;
+  }
+
+  #program .session-title {
+    font-size: 1.3rem;
+  }
+
+  #program .paper-item {
+    padding: 0.875rem 1rem;
+  }
+
+  #program .paper-title {
+    font-size: 1rem;
+  }
+
+  #program .paper-authors {
+    font-size: 0.85rem;
+  }
+
+  #program .technical-session .session-title::after,
+  #program .keynote-session .session-title::after,
+  #program .panel-session .session-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  #program .program-container {
+    margin: 1.5rem 0.5rem;
+  }
+
+  #program .program-content {
+    padding: 1rem;
+  }
+
+  #program .keynote-speaker-info {
+    padding: 1rem;
+  }
+
+  #program .speaker-photo img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Committee Page Styling - SCOPED TO PREVENT CROSS-CONTAMINATION */
 .committee-list {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
@@ -1127,6 +1768,7 @@ ul li {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
   position: relative !important;
   overflow: hidden !important;
+  transform: translateY(0) !important;
 }
 
 .committee-member:hover {
@@ -1166,84 +1808,100 @@ ul li {
   line-height: 1.6 !important;
 }
 
-/* Fix program page table layout */
-.section.facts {
-  padding: 6rem 0 !important;
+/* Committee page responsive design */
+@media (max-width: 768px) {
+  .committee-list {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .committee-member {
+    padding: 1.5rem !important;
+  }
 }
 
-.section.facts .container {
+@media (max-width: 480px) {
+  .committee-member {
+    padding: 1rem !important;
+  }
+
+  .committee-member h5 {
+    font-size: 1.2rem !important;
+  }
+
+  .committee-member p {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Fix Compact Header for Non-Home Pages */
+.compact-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    rgba(147, 51, 234, 0.9) 100%
+  ) !important;
+  padding: 8rem 0 4rem !important;
+  text-align: center !important;
+  color: white !important;
+  position: relative !important;
+  overflow: hidden !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  min-height: 300px !important;
+}
+
+.compact-header::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: linear-gradient(
+    135deg,
+    rgba(147, 51, 234, 0.1) 0%,
+    rgba(167, 85, 247, 0.05) 100%
+  ) !important;
+  z-index: 1 !important;
+}
+
+.compact-header .container {
+  position: relative !important;
+  z-index: 2 !important;
   max-width: 1000px !important;
   margin: 0 auto !important;
   padding: 0 2rem !important;
 }
 
-.section.facts table {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 3rem 0 !important;
-  border-collapse: collapse !important;
-  background: white !important;
-  border-radius: 12px !important;
-  overflow: hidden !important;
-  box-shadow: var(--shadow-soft) !important;
+.compact-intro h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-weight: 800 !important;
+  margin-bottom: 1rem !important;
+  color: white !important;
+  letter-spacing: -0.03em !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
-.section.facts table td {
-  padding: 1.5rem !important;
-  border-bottom: 1px solid var(--border-light) !important;
-  vertical-align: top !important;
+.compact-intro p {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin: 0 !important;
+  font-weight: 500 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
 }
 
-.section.facts table td:first-child {
-  background: var(--background-light) !important;
-  font-weight: 600 !important;
-  color: var(--text-primary) !important;
-  min-width: 140px !important;
-  font-family: "JetBrains Mono", monospace !important;
-  font-size: 0.95rem !important;
+/* Fix Navigation Positioning on Non-Home Pages */
+body {
+  padding-top: 70px !important; /* Account for fixed navbar */
 }
 
-.section.facts table h3 {
-  color: var(--text-primary) !important;
-  font-size: 1.3rem !important;
-  font-weight: 700 !important;
-  margin-bottom: 0.5rem !important;
-  text-align: left !important;
+/* Ensure proper spacing after navbar on all pages */
+.navbar-custom + .compact-header {
+  margin-top: 0 !important;
 }
 
-.section.facts table h3::before {
-  display: none !important;
-}
-
-/* Override any remaining Bootstrap conflicts */
-* {
-  box-sizing: border-box !important;
-}
-
-/* Force proper width constraints on all content */
-.article-content,
-.content-section {
-  max-width: 900px !important;
-  margin: 0 auto !important;
-  padding: 0 2rem !important;
-  overflow-x: hidden !important;
-  word-wrap: break-word !important;
-}
-
-/* Prevent text from going full width */
-.article-content > * {
-  max-width: 100% !important;
-  overflow-wrap: break-word !important;
-}
-
-/* Fix any remaining paragraph issues */
-.article-content p,
-.article-content h1,
-.article-content h2,
-.article-content h3,
-.article-content h4,
-.article-content h5,
-.article-content h6 {
-  max-width: 100% !important;
-  box-sizing: border-box !important;
+.navbar-custom + .section {
+  margin-top: 0 !important;
+  padding-top: 6rem !important;
 }

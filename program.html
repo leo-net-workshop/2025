@@ -15,105 +15,104 @@
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <style>
-        .grey-shaded-box {
-            background-color: #f2f2f2;
-            /* Grey shade */
-            padding: 15px;
-            /* Space inside the box */
-            border: 1px solid #e0e0e0;
-            /* Optional border */
-            border-radius: 5px;
-            /* Rounded corners */
-            font-family: Arial, sans-serif;
-            /* Optional font styling */
-            font-size: 18px;
-        }
-    </style>
-
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
-    <!-- navigation bar and header placeholder -->
-    {% include header.html %}
+    <!-- Using small header instead of full header -->
+    {% include header-small.html %}
 
-    <section id="program" class="section facts" style="display: block;">
+    <section id="program" class="section facts">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">PROGRAM</h3>
+                    <h3 class="section-title">{{ site.data.program.title }}</h3>
                 </div>
             </div>
 
-            <table border="0" cellspacing="10" valign="top">
-                <tr>
-                    <th></th>
-                    <th></th>
-                </tr>
-
-                {% for item in site.data.timetable %}
-                <tr>
-                    <td style="vertical-align:text-top;">{{ item.time }}</td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            {% if item.type == "keynote" %}
-                            <h3>{{ item.session }}<br>
-                            </h3>
-                            <div class="col-sm-3 col-md-3">
-                                <figure class="thumbnail">
-                                    <a href="{{ item.speaker.profile_url }}" target="_blank"><img
-                                            src="{{ item.speaker.image }}" class="img-responsive" alt="Image"></a>
-                                    <figcaption class="caption text-center">
-                                        <h3>{{ item.speaker.name }}<br>
-                                            <small>{{ item.speaker.title }}</small>
-                                        </h3>
-                                    </figcaption>
-                                </figure>
+            <div class="program-container">
+                {% for session in site.data.program.sessions %}
+                <div class="program-item {% if session.type == 'break' %}program-break{% endif %}">
+                    <div class="program-time">
+                        <span>{{ session.time }}</span>
+                    </div>
+                    <div class="program-content">
+                        {% if session.type == "keynote" %}
+                        <div class="keynote-session">
+                            <h3 class="session-title">{{ session.title }}</h3>
+                            <div class="keynote-header">
+                                <div class="keynote-speaker-info">
+                                    <div class="speaker-photo">
+                                        <a href="{{ session.speaker.profile_url }}" target="_blank">
+                                            <img src="{{ session.speaker.image }}" alt="{{ session.speaker.name }}">
+                                        </a>
+                                    </div>
+                                    <div class="speaker-details">
+                                        <h4>{{ session.speaker.name }}</h4>
+                                        <p class="speaker-title">{{ session.speaker.title }}</p>
+                                        <h5>{{ session.talk.title }}</h5>
+                                    </div>
+                                </div>
                             </div>
-                            <b>Title: {{ item.talk.title }}</b><br>
-                            {{ item.talk.abstract }}<br>
+                            <div class="keynote-abstract">
+                                <p>{{ session.talk.abstract }}</p>
+                            </div>
+                        </div>
 
-                            {% elsif item.type == "opening" %}
-                            <h3>{{ item.session }}<br>
-                                <font size="2" , style="font-weight:normal">Chair: {{ item.chair }}</font>
-                            </h3><br>
+                        {% elsif session.type == "opening" %}
+                        <div class="opening-session">
+                            <h3 class="session-title">{{ session.title }}</h3>
+                            <p class="session-chair">Chair: {{ session.chair }}</p>
+                        </div>
 
-                            {% elsif item.type == "break" %}
-                            <h3>{{ item.session }}<br>
-                            </h3>
+                        {% elsif session.type == "break" %}
+                        <div class="break-session">
+                            <h3 class="session-title">{{ session.title }}</h3>
+                        </div>
 
-                            {% elsif item.type == "technical_session" %}
-                            <h3>{{ item.session }}<br>
-                            </h3><br>
-                            {% for paper in item.papers %}
-                            <b>{{ paper.title }}</b><br>
-                            <font size="2">{{ paper.authors }}</font><br><br>
-                            {% endfor %}
-
-                            {% elsif item.type == "panel" %}
-                            <h3>{{ item.session }}<br /><br />
-                                <font size="5" , style="font-weight:normal"><b>Topic: {{ item.topic }}</b></font><br />
-                                <font size="3" , style="font-weight:normal"><b>Panelists:</b><br />
-                                    {% for panelist in item.panelists %}
-                                    {{ panelist.name }} ({{ panelist.affiliation }}),<br />
-                                    {% endfor %}
-                                </font><br />
-                                <font size="3" , style="font-weight:normal"><b>Moderator:</b> {{ item.moderator }}
-                                </font>
-                            </h3><br>
+                        {% elsif session.type == "technical_session" %}
+                        <div class="technical-session">
+                            <h3 class="session-title">{{ session.title }}</h3>
+                            {% if session.chair and session.chair != "" %}
+                            <p class="session-chair">Chair: {{ session.chair }}</p>
                             {% endif %}
-                        </ulx>
-                    </td>
-                </tr>
-                {% if forloop.last == false %}
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                {% endif %}
+                            <div class="papers-list">
+                                {% for paper in session.papers %}
+                                {% if paper.url and paper.url != "" %}
+                                <a href="{{ paper.url }}" class="paper-item" target="_blank">
+                                    <h4 class="paper-title">{{ paper.title }}</h4>
+                                    <p class="paper-authors">{{ paper.authors }}</p>
+                                </a>
+                                {% else %}
+                                <a href="#" class="paper-item" onclick="return false;">
+                                    <h4 class="paper-title">{{ paper.title }}</h4>
+                                    <p class="paper-authors">{{ paper.authors }}</p>
+                                </a>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        {% elsif session.type == "panel" %}
+                        <div class="panel-session">
+                            <h3 class="session-title">{{ session.title }}</h3>
+                            <div class="panel-details">
+                                <h4 class="panel-topic">Topic: {{ session.topic }}</h4>
+                                <div class="panelists">
+                                    <h5>Panelists:</h5>
+                                    <ul>
+                                        {% for panelist in session.panelists %}
+                                        <li>{{ panelist.name }} ({{ panelist.affiliation }})</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <p class="moderator"><strong>Moderator:</strong> {{ session.moderator }}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
                 {% endfor %}
-            </table>
+            </div>
         </div>
     </section>
 

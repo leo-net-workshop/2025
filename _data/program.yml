@@ -1,0 +1,109 @@
+# LEO-NET 2025 Workshop Program
+# This file contains the complete program structure with placeholder URLs for papers
+
+title: "PROGRAM"
+subtitle: "The 3rd ACM Workshop on LEO Networking and Communication 2025"
+
+sessions:
+  - time: "09:00 - 09:05"
+    title: "Opening"
+    type: "opening"
+    chair: "Deepak Vasisht (University of Illinois Urbana-Champaign)"
+
+  - time: "09:05 - 10:00"
+    title: "Keynote"
+    type: "keynote"
+    speaker:
+      name: "Dan York"
+      title: "Senior Advisor at the Internet Society"
+      image: "img/speakers/danyork_2024_1-square.JPG"
+      profile_url: "https://www.danyork.com/"
+    talk:
+      title: "LEOs in 2024: Space Lasers, Policies, Coverage, and Connectivity"
+      abstract: "Over 7,000 satellites are now in low Earth orbit (LEO) with 10s of thousands more planned over the next few years. Where is this all going? High-speed, low-latency connectivity is changing people's lives and helping connect so many of the unconnected, but at what cost? What are the opportunities and the challenges with providing Internet access from space? Two years ago the Internet Society published a perspective on the state of the LEO-based Internet access industry. In this session, Dan York will look at all that has happened over the past two years in terms of technology and policy, and also the many lingering issues and areas where more research is needed. He'll explore the major barriers for operators and the new opportunities such as direct-to-device. There is huge potential for systems in LEO to bring the Internet to more people - if we are okay with the tradeoffs!"
+
+  - time: "10:00 - 10:30"
+    title: "Coffee Break"
+    type: "break"
+
+  - time: "10:30 - 11:30"
+    title: "Technical Session 1: Will it always work?"
+    type: "technical_session"
+    chair: "" # Add chair name when available
+    papers:
+      - title: "LEO Satellite Network Resilience Analysis: A Focus on Critical Satellites"
+        authors: "Zhuoyuan Li (Rensselaer Polytechnic Institute), Wenyi Morty Zhang, Wenhao Chen, Yiyan Hu (UC San Diego), Weyl Lu (UC Davis)"
+        url: "" # Placeholder for paper URL - to be filled when proceedings are available
+
+      - title: "Observing the Skies – Ground-Based Cloud Detection for Evaluating the Impact of Clouds on LEO Communications"
+        authors: "Eric Lanfer, Dominic Laniewski, Malte Wehmeier, Nils Aschenbruck (Osnabrück University)"
+        url: "" # Placeholder for paper URL
+
+      - title: "Weathering a Solar Superstorm: Starlink Performance during the May 2024 Storm"
+        authors: "Alagappan Ramanathan (University of California, Irvine), Sangeetha Abdu Jyothi (University of California, Irvine, VMware Research)"
+        url: "" # Placeholder for paper URL
+
+      - title: "Choosing the Right Spot: How Well Are LEO Satellite Gateways Placed? Starlink Case-Study"
+        authors: "Abdullahi Kutiriko Abubakar, Mohamed Kassem, Nishanth Sastry (University of Surrey)"
+        url: "" # Placeholder for paper URL
+
+  - time: "11:30 - 12:30"
+    title: "Technical Session 2: Something old, and something new"
+    type: "technical_session"
+    chair: "" # Add chair name when available
+    papers:
+      - title: "Do We Need a Million Satellites in Orbit?"
+        authors: "Demi Lei, Ahmed Saeed (Georgia Tech)"
+        url: "" # Placeholder for paper URL
+
+      - title: "An In-Depth Investigation of LEO Satellite Topology Design Parameters"
+        authors: "Wenyi Morty Zhang (UC San Diego), Zihan Xu (Carnegie Mellon University), Sangeetha Abdu Jyothi (University of California, Irvine, VMware Research)"
+        url: "" # Placeholder for paper URL
+
+      - title: "On the Feasibility of Laser Inter-satellite Links for Low-latency High Frequency Trading"
+        authors: "Vaibhav Singh, Akshay Gadre (University of Washington)"
+        url: "" # Placeholder for paper URL
+
+      - title: "A Survey on Direct-to-Device Satellite Communications: Advances, Challenges, and Prospects"
+        authors: "Hannaneh B. Pasandi (University of California, Berkeley and Inria), Juan A. Fraire (Inria), Sylvia Ratnasamy (University of California, Berkeley), Herve Rivano (Inria)"
+        url: "" # Placeholder for paper URL
+
+  - time: "12:30 - 14:00"
+    title: "Lunch"
+    type: "break"
+
+  - time: "14:00 - 15:00"
+    title: "Technical Session 3: How does anything work?"
+    type: "technical_session"
+    chair: "" # Add chair name when available
+    papers:
+      - title: "Trajectory-based Serving Satellite Identification with User Terminal's Field-of-View"
+        authors: "Ali Ahangarpour, Jinwei Zhao, Jianping Pan (University of Victoria)"
+        url: "" # Placeholder for paper URL
+
+      - title: "Segment Routing based on Geographic Checkpoints"
+        authors: "Valentin Hartig, Marcin Bosk (Technical University of Munich), Nitinder Mohan (Delft University of Technology), Paulo Mendes (Airbus)"
+        url: "" # Placeholder for paper URL
+
+      - title: "Starlink Performance through the Edge Router Lens"
+        authors: "Sarah-Michelle Hammer, Vamsi Addanki, Max Franke, Stefan Schmid (TU Berlin)"
+        url: "" # Placeholder for paper URL
+
+      - title: "StarQUIC: Tuning Congestion Control Algorithms for QUIC over LEO Satellite Networks"
+        authors: "Victor Kamel, Jinwei Zhao, Daoping Li, Jianping Pan (University of Victoria)"
+        url: "" # Placeholder for paper URL
+
+  - time: "15:00 - 16:00"
+    title: "Panel Discussion & Closing Remarks"
+    type: "panel"
+    topic: "Challenges on path towards integrated satellite networks."
+    panelists:
+      - name: "Akshay Gadre"
+        affiliation: "University of Washington"
+      - name: "Dan York"
+        affiliation: "Internet Society"
+      - name: "J Pan"
+        affiliation: "University of Victoria"
+      - name: "Mahesh K. Marina"
+        affiliation: "The University of Edinburgh"
+    moderator: "Deepak Vasisht (University of Illinois Urbana-Champaign)"
