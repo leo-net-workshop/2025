@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{
+    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM SIGCOMM {{
         site.data.conference.year }}</title>
 
     <!-- css -->
@@ -18,84 +18,158 @@
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
-    {% include header.html %}
+    {% include header-small.html %}
 
-    <section id="cfp" class="section cfp" style="display: block;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">CALL FOR PAPERS</h3>
-                </div>
+    <section class="section">
+        <div class="article-content">
+            <h3>Call for Papers</h3>
+
+            <p><strong>LEO-NET 2025</strong> invites submissions from researchers and practitioners in academia and
+                industry who are exploring the latest developments and open challenges in LEO satellite networks and
+                communications.</p>
+
+            <p>Low Earth Orbit (LEO) satellite communication and networking is a rapidly growing field with great
+                potential for enabling new and innovative applications by providing low-latency, high-bandwidth Internet
+                connectivity globally. Massive-scale LEO deployments from industrial players, such as Starlink, OneWeb,
+                etc. have allowed wide-scale availability of LEO satellite network access globally but their network
+                remains to operate as a black box.</p>
+
+            <p>However, considering the state of LEO networking and constellation design is still in its infancy, we
+                believe that the unique challenges posed by the inherently dynamic LEO satellite architectures,
+                necessitate novel solutions in network architecture, protocol design, resource management, along with
+                several other verticals.</p>
+
+            <p>We also welcome work-in-progress and position papers that present new directions, highly original ideas,
+                or have the potential to provoke insightful discussions during the workshop. Whether you're an expert or
+                a newcomer to the field, we encourage you to join us and contribute to this exciting area of research.
+            </p>
+
+            <h4>Topics of Interest</h4>
+            <p>The scope of this workshop includes (but is not limited to) the following topics:</p>
+
+            <div class="topics-grid">
+                <ul>
+                    <li>LEO topology/constellation design</li>
+                    <li>Routing for LEO constellations</li>
+                    <li>Transport for LEO networks</li>
+                    <li>Congestion control for LEO networks</li>
+                    <li>Resource management for LEO networks</li>
+                    <li>Content Delivery and Streaming over LEO networks</li>
+                    <li>Mobility and handover management in LEO networks</li>
+                    <li>Interactions between LEO, MEO and GEO constellations</li>
+                </ul>
+                <ul>
+                    <li>Interplay next-generation mobile (5G, 6G) and LEO networks</li>
+                    <li>Mobile/Edge computing and IoT in space</li>
+                    <li>ML/AI for LEO satellites</li>
+                    <li>Emerging applications for LEO networks</li>
+                    <li>Performance measurements over LEO networks</li>
+                    <li>Simulation/Emulation tools for LEO networks</li>
+                    <li>Security/Privacy for LEO networks</li>
+                </ul>
             </div>
 
-            <p align="justify">Low Earth Orbit (LEO) satellite communication and networking is a rapidly growing field
-                with
-                great potential for enabling new and innovative applications by providing low-latency,
-                high-bandwidth Internet connectivity globally. Massive-scale LEO deployments from industrial
-                players, such as Starlink, OneWeb, etc. have allowed wide-scale availability of LEO satellite
-                network access globally but their network remains to operate as a black box. However,
-                considering the state of LEO networking and constellation design is still in its infancy, we believe
-                that the unique challenges posed by the inherently dynamic LEO satellite architectures,
-                necessitate novel solutions in network architecture, protocol design, resource management,
-                along with several other verticals.</p>
+            <h4>Submission Guidelines</h4>
 
-            <p align="justify">LEONET 2025 invites submissions from researchers and practitioners in academia and industry who are exploring the latest developments and open challenges in LEO satellite networks and communications. We also welcome work-in-progress and position papers that present new directions, highly original ideas, or have the potential to provoke insightful discussions during the workshop. Whether you're an expert or a newcomer to the field, we encourage you to join us and contribute to this exciting area of research.</p>
+            <p>Submissions must be original, unpublished work, and not currently under consideration elsewhere. Regular
+                research papers of up to 6 pages, excluding references and appendices, in two-column 10pt ACM format.
+                Submissions must be original, unpublished work, and not under consideration at another conference or
+                journal.</p>
 
-            <p align="justify">As such, the scope of this workshop includes (but is not limited to) the following
-                topics.<br /></p>
+            <p>Papers must exclude author names and affiliations for double-blind peer reviewing by the TPC. Authors of
+                accepted submissions are expected to present their work at the workshop. Prospective authors are
+                encouraged to use the same PDF formatting guidelines as the main conference.</p>
 
-            <ulx class="list-arrow-right" style="font-weight: 100;">
-                <li>LEO topology/constellation design</li>
-                <li>Routing for LEO constellations </li>
-                <li>Transport for LEO networks </li>
-                <li>Congestion control for LEO networks </li>
-                <li>Resource management for LEO networks </li>
-                <li>Content Delivery and Streaming over LEO networks</li> 
-                <li>Mobility and handover management in LEO networks </li>
-                <li>Interactions between LEO, MEO and GEO constellations</li>
-                <li>Interplay next-generation mobile (5G, 6G) and LEO networks </li>
-                <li>Mobile/Edge computing and IoT in space </li>
-                <li>ML/AI for LEO satellites</li>
-                <li>Emerging applications for LEO networks </li>
-                <li>Performance measurements over LEO networks</li>
-                <li>Simulation/Emulation tools for LEO networks</li>
-                <li>Security/Privacy for LEO networks</li>
+            <p>Accepted papers will be published in the SIGCOMM Workshop Proceedings, and available at the ACM Digital
+                Library.</p>
 
-            </ulx>
+            <p>You may find these <a href="https://www.acm.org/publications/proceedings-template" target="_blank">ACM
+                    templates</a> useful in complying with the above requirements. For LaTeX users, please use
+                <code>\documentclass[sigconf, 10pt, anonymous]{acmart}</code>.
+            </p>
 
-            <br />
-            <p><b>SUBMISSION GUIDELINES</b>
+            <p><strong>Submission website:</strong> <a href="{{ site.data.conference.submission_site }}" target="_blank"
+                    class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin-right: 0.5rem;">
+                        <path
+                            d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Submit Your Paper
+                </a></p>
 
-            <p>Submissions must be original, unpublished work, and not currently under consideration elsewhere.
-                Regular research papers of up to 6 pages, excluding references and appendices, in two-column 10pt ACM format. Submissions must be original, unpublished work, and not under consideration at another conference or journal. Papers must exclude author names and affiliations for double-blind peer reviewing by the TPC. Authors of accepted submissions are expected to present their work at the workshop. Prospective authors are encouraged to use the same PDF formatting guidelines as the main conference. Authors of accepted papers are expected to present their work at the workshop. Accepted papers will be published in the SIGCOMM Workshop Proceedings, and available at the ACM Digital Library.</p>
+            <h4>Questions?</h4>
+            <p>If you have any questions regarding {{ site.data.conference.short_title }} {{ site.data.conference.year
+                }}, please contact us at <a href="mailto:n.mohan@tudelft.nl">n.mohan@tudelft.nl</a></p>
+        </div>
 
-            <p>You may find these <a href="https://www.acm.org/publications/proceedings-template"
-                    target="_blank">templates</a> useful in complying with the above requirements. For Latex users,
-                please use <i>\documentclass[sigconf, 10pt, anonymous]{acmart}</i>. But as an author, you bear the final
-                responsibility to verify (manually or through the above online paper checker) that your submission is
-                format-compliant.</p>
-                
- 
-            <p>Submission website: <a href="{{ site.data.conference.submission_site }}"
-                    target=”_blank”>{{ site.data.conference.submission_site }}</a></p>
-
-
-            <p><b>IMPORTANT DATES:</b><br />
-
-                Paper submission: {{ site.data.dates.submission }}<br />
-                Paper acceptance notification: {{ site.data.dates.notification }}<br />
-                Camera ready: {{ site.data.dates.camera_ready }}<br />
-                Workshop: {{ site.data.conference.dates }}</p>
-
-            <p>If you have any other questions regarding {{ site.data.conference.short_title }} {{ site.data.conference.year }}, please contact us at <a href="mailto:n.mohan@tudelft.nl"><u>n.mohan@tudelft.nl</u></a>.
+        <div class="dates-section">
+            <div class="dates-content">
+                <div class="date-item">
+                    <h4>Paper Submission</h4>
+                    <p>{{ site.data.dates.submission }}</p>
+                </div>
+                <div class="date-item">
+                    <h4>Acceptance Notification</h4>
+                    <p>{{ site.data.dates.notification }}</p>
+                </div>
+                <div class="date-item">
+                    <h4>Camera Ready</h4>
+                    <p>{{ site.data.dates.camera_ready }}</p>
+                </div>
+                <div class="date-item">
+                    <h4>Workshop</h4>
+                    <p>{{ site.data.conference.dates }}</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; {{ site.data.conference.year }} {{ site.data.conference.short_title }}. All rights reserved.
+                </p>
+                <p>Part of <a href="https://conferences.sigcomm.org/sigcomm/{{ site.data.conference.year }}/"
+                        target="_blank">ACM SIGCOMM {{ site.data.conference.year }}</a></p>
+            </div>
+        </div>
+    </footer>
+
     <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.querySelector('.navbar-custom');
+            const siteBranding = document.querySelector('.site-branding');
+
+            // Always show logo on non-home pages
+            if (siteBranding) {
+                siteBranding.classList.add('visible');
+            }
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('navbar-solid');
+                } else {
+                    navbar.classList.remove('navbar-solid');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Required meta tags -->
 
   <meta name="description"
     content="The 3rd ACM Workshop on on LEO Networking and Communication, co-located with SIGCOMM 2025 (Coimbra, Portugal).">
@@ -12,15 +11,6 @@
     content="LEO-NET, LEO-NET2025, LEO-NET 2025, LEO, SIGCOMM, SIGCOMM 2025, low earth orbit, satellite, LEO satellite, satellite broadband, workshop, talks, research">
   <meta name="author" content="Nitinder Mohan, Deepak Vasisht, Debopam Bhattacherjee">
 
-  <meta property="og:image" content="https://leo-net-workshop.github.io/2025/img/background/bg.jpeg">
-  <meta property="og:image:width" content="1200px" />
-  <meta property="og:image:height" content="627px" />
-  <meta property="og:url" content="https://leo-net-workshop.github.io/2025/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="LEO-NET 2025" />
-  <meta property="og:description"
-    content="The 3rd ACM Workshop on on LEO Networking and Communication, co-located with SIGCOMM 2025 (Coimbra, Portugal)." />
-  <meta property="og:site_name" content="LEO-NET 2025" />
   <title>LEO-NET 2025 | ACM SIGCOMM 2025</title>
 
   <!-- css -->
@@ -31,9 +21,8 @@
 
 <body data-spy="scroll" data-target="#site-nav">
   <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
-
             <!-- logo -->
             <div class="site-branding">
                 <a class="logo" href="index.html">LEO-NET 2025</a>
@@ -46,97 +35,147 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
-        </div><!-- /.navbar-header -->
+        </div>
 
         <div class="collapse navbar-collapse" id="navbar-items">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
                 <!-- navigation menu -->
                 <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="program.html#program">Program</a></li> -->
                 <li><a href="cfp.html">Call for Papers</a></li>
-                <!--                     <li><a href="cfp-poster-demo.html">Call for Posters and Demos</a></li> -->
-
-                <!--                     <li><a href="camera-ready.html#camera-ready">Camera-ready Instructions</a></li> -->
                 <li><a href="committee.html">Committees</a></li>
                 <li><a href="previous_editions.html">Previous Editions</a></li>
-                <!-- <li><a href="accepted-papers.html#accepted">Accepted Papers</a></li> -->
-                <!--<li><a href="accepted.html#accepted">Accepted Papers</a></li>-->
-                <!--<li><a href="keynote.html">Keynote</a></li>-->
+                <li><a href="program.html">Program</a></li>
             </ul>
         </div>
     </div><!-- /.container -->
 </nav>
 
-<header id="site-header" class="site-header valign-center" height="100px">
+<!-- Full Hero Header - Only for Home Page -->
+<header id="site-header" class="site-header valign-center">
     <div class="intro">
-
         <h1>LEO-NET 2025</h1>
-
         <h2>The 3<sup>rd</sup> ACM Workshop on LEO Networking and Communication 2025</h2>
-
         <br class="mobile-break">
-        <h2>Coimbra, Portugal<br>September 8<sup>th</sup>, 2025</h2>
-
-        <!-- <br class="mobile-break"> -->
-        <p><small>Co-located with <a href="https://conferences.sigcomm.org/sigcomm/2025/" target="_blank"><font color="FFFFFF">ACM SIGCOMM 2025</font></a></small></p>
-
+        <h2 class="hero-location-date">Coimbra, Portugal<br>September 8<sup>th</sup>, 2025</h2>
+        <a href="https://conferences.sigcomm.org/sigcomm/2025/" target="_blank" class="hero-subtitle">Co-located with
+            ACM SIGCOMM 2025</a>
         <br class="mobile-break" style="line-height: 5px" />
-
-
-
     </div>
 </header>
 
-  <section id="about" class="section about" style="display: block;">
-    <div class="container">
-      <h3 style="text-align:center;" class="section-title">The 3<sup>rd</sup> ACM Workshop on LEO Networking and Communication
+  <section class="section">
+    <div class="article-content">
+      <h3>The 3<sup>rd</sup> ACM Workshop on LEO Networking and Communication</h3>
 
-      </h3>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h4>Global Connectivity</h4>
+          <p>Exploring how LEO constellations can connect the next billion users to the Internet, bringing reliable
+            connectivity to the remotest regions of Earth.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Earth Observation</h4>
+          <p>Enabling high-resolution Earth imagery and massive-scale IoT applications across industries through
+            advanced satellite technology.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Low Latency</h4>
+          <p>Leveraging Low-Earth Orbit positioning for unprecedented low-latency connectivity and real-time
+            applications.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Space Computing</h4>
+          <p>Investigating edge computing capabilities in space, enabling distributed processing and reducing data
+            transmission requirements for LEO satellite networks.</p>
+        </div>
+      </div>
 
-      <p align="justify">How do we connect the next billion users to the Internet? How do we capture high-resolution
-        pictures of the Earth, or enable massive-scale IoT across industries? How do we enable
-        high-capacity Internet in the remotest regions of the globe? Over the past decade, significant
-        reductions in satellite production and launch costs have opened up a new `space’ – access to
-        Low-Earth Orbits or LEO. Massive constellations from industry consisting of hundreds to tens of
-        thousands of low-flying satellites are being rolled out. The wide-scale LEO satellite deployment
-        and interest present a unique challenge and opportunity to bring reliable Internet connectivity to
-        the remotest regions of the Earth. As such, the research community needs the right tools to
-        explore various unforeseen opportunities (like global coverage, low-latency connectivity, and
-        high-resolution imagery) and challenges (like extreme mobility, bottlenecked downlinks, and
-        sparse ground infrastructure) that come with LEO deployments.</p>
+      <p>Over the past decade, significant reductions in satellite production and launch costs have opened up a new
+        'space' – access to Low-Earth Orbits or LEO. Massive constellations from industry consisting of hundreds to tens
+        of thousands of low-flying satellites are being rolled out.</p>
 
+      <p>The wide-scale LEO satellite deployment and interest present a unique challenge and opportunity to bring
+        reliable Internet connectivity to the remotest regions of the Earth. As such, the research community needs the
+        right tools to explore various unforeseen opportunities (like global coverage, low-latency connectivity, and
+        high-resolution imagery) and challenges (like extreme mobility, bottlenecked downlinks, and sparse ground
+        infrastructure) that come with LEO deployments.</p>
 
-      <p align="justify">Overall, LEO-NET aims to open new avenues for networking researchers to explore different
-        aspects of LEO constellation operation and performance and shape the state of LEO satellite
-        communication. We see multiple strong verticals in LEO – understanding the operation and
-        potential bottlenecks in rapidly growing LEO constellation offerings, novel network protocol
-        extensions that leverage the highly dynamic LEO links, applications like satellite imagery and
-        IoT, LEO compute, and several others. We expect strong submissions along all of these
-        verticals addressing many open challenges across the stack.</p>
+      <p>Overall, LEO-NET aims to open new avenues for networking researchers to explore different aspects of LEO
+        constellation operation and performance and shape the state of LEO satellite communication. We see multiple
+        strong verticals in LEO – understanding the operation and potential bottlenecks in rapidly growing LEO
+        constellation offerings, novel network protocol extensions that leverage the highly dynamic LEO links,
+        applications like satellite imagery and IoT, LEO compute, and several others. We expect strong submissions along
+        all of these verticals addressing many open challenges across the stack.</p>
 
-      <p id="listing" align="justify">In addition to the regular papers, the program of LEO-NET 2025 will also include keynote and panel
-        discussion including experts in LEO networking research.</li>
+      <p>In addition to the regular papers, the program of LEO-NET 2025 will also include keynote and panel discussion including experts in LEO networking
+        research.</p>
 
-        <br>
+      
+    </div>
 
-        
-
-        <br />
-      <p><b>IMPORTANT DATES:</b><br />
-        Paper submission: May 15<sup>th</sup>, 2025 (23:59:59 AoE)<br />
-        Acceptance notification: June 20<sup>th</sup>, 2025<br />
-        Camera ready: July 2<sup>nd</sup>, 2025<br />
-        Workshop: September 8<sup>th</sup>, 2025</p>
-
-    </div><!-- /.container -->
+    <div class="dates-section">
+      <div class="dates-content">
+        <div class="date-item">
+          <h4>Paper Submission</h4>
+          <p><del>May 29<sup>th</sup>, 2025</del> June 3<sup>rd</sup>, 2025 (23:59:59 AoE) <span style="color:red;">[hard]</span></p>
+        </div>
+        <div class="date-item">
+          <h4>Acceptance Notification</h4>
+          <p>June 25<sup>th</sup>, 2025</p>
+        </div>
+        <div class="date-item">
+          <h4>Camera Ready</h4>
+          <p>July 23<sup>nd</sup>, 2025</p>
+        </div>
+        <div class="date-item">
+          <h4>Workshop</h4>
+          <p>September 8<sup>th</sup>, 2025</p>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 LEO-NET. All rights reserved.</p>
+        <p>Part of <a href="https://conferences.sigcomm.org/sigcomm/2025/"
+            target="_blank">ACM SIGCOMM 2025</a></p>
+      </div>
+    </div>
+  </footer>
 
   <!-- import navigation bar and header -->
   <script src="//code.jquery.com/jquery.min.js"></script>
-
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navbar = document.querySelector('.navbar-custom');
+      const siteBranding = document.querySelector('.site-branding');
+      const siteHeader = document.querySelector('#site-header');
+
+      window.addEventListener('scroll', function () {
+        const scrollY = window.scrollY;
+        const headerHeight = siteHeader ? siteHeader.offsetHeight : 100;
+
+        // Show/hide navbar logo based on scroll position
+        if (scrollY > headerHeight * 0.8) {
+          navbar.classList.add('navbar-solid');
+          if (siteBranding) {
+            siteBranding.classList.add('visible');
+          }
+        } else {
+          navbar.classList.remove('navbar-solid');
+          if (siteBranding) {
+            siteBranding.classList.remove('visible');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

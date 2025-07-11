@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{
+  <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM SIGCOMM {{
     site.data.conference.year }}</title>
 
   <!-- css -->
@@ -18,73 +18,119 @@
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
-  {% include header.html %}
+  {% include header-small.html %}
 
-  <section id="organization" class="section faq" style="display: block;">
-    <div class="container">
+  <section class="section">
+    <div class="article-content">
+      <h3>Committee</h3>
 
-      <h3>Workshop Organisers</h3>
-      {% for chair in site.data.chairs.general_chairs %}
-      {{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}<br />
-      {% endfor %}
+      <h4>Workshop Organisers</h4>
+      <div class="committee-list">
+        {% for chair in site.data.chairs.general_chairs %}
+        <div class="committee-member">
+          <h5>{{ chair.firstname }} {{ chair.lastname }}</h5>
+          <p>{{ chair.institution }}</p>
+        </div>
+        {% endfor %}
+      </div>
 
-
-      <!--
-            <h3>Web Chair</h3>
-						{% for chair in site.data.chairs.web_chairs %}
-              {{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}<br/>
-            {% endfor %}
--->
-
-      <h3>Technical Program Committee</h3>
-
-      Ahmed Saeed, GeorgiaTech, USA </br>
-      Yuanjie Li, Tsinghua University, China </br>
-      Nishanth Sastry, University of Surrey, UK </br>
-      Zeqi Lai, Tsinghua University, China </br>  
-      Sangeetha Abdu Jyothi, University of California, Irvine, USA </br>      
-      David Bermbach, TU Berlin, Germany </br>
-      Anna Brünstorm, Karlstadt University, Sweden </br>
-      Suraj Jog, Microsoft Research, USA </br>
-      Jianping Pan, University of Victoria, Canada </br>
-      Amitangshu Pal, IIT Kanpur, India</br>
-      Jörg Ott, Technical University of Munich, Germany </br>
-      Paulo Mendes, Airbus Research, Germany</br>
-      Matteo Varvello, Nokia Bell Labs, USA </br>
-      Ashwin Ashok, Georgia State University, USA </br>
-
-<!--
-Akshay Gadre, University of Washington, USA </br>
-	    Sumit Roy, University of Washington, USA </br>
-	    Aravindh Raman, Brave Research, UK </br>
-	    Jiangchuan Liu, Simon Fraser University, Canada </br>
-      Shangguang Wang, Beijing University of Posts and Telecommunications (BUPT), China </br>
-	    Mahesh Marina, University of Edinburgh, UK</br>
-      Bhuvana Krishnaswamy, University of Wisconsin–Madison, US</br>
-	    Tusher Chakraborty, Microsoft Research, USA </br>
--->
-
-
-      <!-- Giuliari Giacomo, ETH Zurich, Switzerland </br> -->
-      <!-- Jörg Ott, Technical University of Munich, Germany </br> -->
-      <!-- Mahesh Marina, University of Edinburgh, UK </br> -->
-
-      <!--
-      <h3>Advisory Board Member</h3>
-      Debopam Bhattacherjee, Microsoft Research India </br>
-      Nishanth Sastry, University of Surrey, UK </br>
-      -->
-
-
-
+      <h4>Technical Program Committee</h4>
+      <div class="committee-list">
+        <div class="committee-member">
+          <h5>Ahmed Saeed</h5>
+          <p>GeorgiaTech, USA</p>
+        </div>
+        <div class="committee-member">
+          <h5>Yuanjie Li</h5>
+          <p>Tsinghua University, China</p>
+        </div>
+        <div class="committee-member">
+          <h5>Nishanth Sastry</h5>
+          <p>University of Surrey, UK</p>
+        </div>
+        <div class="committee-member">
+          <h5>Zeqi Lai</h5>
+          <p>Tsinghua University, China</p>
+        </div>
+        <div class="committee-member">
+          <h5>Sangeetha Abdu Jyothi</h5>
+          <p>University of California, Irvine, USA</p>
+        </div>
+        <div class="committee-member">
+          <h5>David Bermbach</h5>
+          <p>TU Berlin, Germany</p>
+        </div>
+        <div class="committee-member">
+          <h5>Anna Brünstorm</h5>
+          <p>Karlstadt University, Sweden</p>
+        </div>
+        <div class="committee-member">
+          <h5>Suraj Jog</h5>
+          <p>Microsoft Research, USA</p>
+        </div>
+        <div class="committee-member">
+          <h5>Jianping Pan</h5>
+          <p>University of Victoria, Canada</p>
+        </div>
+        <div class="committee-member">
+          <h5>Amitangshu Pal</h5>
+          <p>IIT Kanpur, India</p>
+        </div>
+        <div class="committee-member">
+          <h5>Jörg Ott</h5>
+          <p>Technical University of Munich, Germany</p>
+        </div>
+        <div class="committee-member">
+          <h5>Paulo Mendes</h5>
+          <p>Airbus Research, Germany</p>
+        </div>
+        <div class="committee-member">
+          <h5>Matteo Varvello</h5>
+          <p>Nokia Bell Labs, USA</p>
+        </div>
+        <div class="committee-member">
+          <h5>Ashwin Ashok</h5>
+          <p>Georgia State University, USA</p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; {{ site.data.conference.year }} {{ site.data.conference.short_title }}. All rights reserved.</p>
+        <p>Part of <a href="https://conferences.sigcomm.org/sigcomm/{{ site.data.conference.year }}/"
+            target="_blank">ACM SIGCOMM {{ site.data.conference.year }}</a></p>
+      </div>
+    </div>
+  </footer>
+
   <!-- import navigation bar and header -->
   <script src="//code.jquery.com/jquery.min.js"></script>
-
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navbar = document.querySelector('.navbar-custom');
+      const siteBranding = document.querySelector('.site-branding');
+
+      // Always show logo on non-home pages
+      if (siteBranding) {
+        siteBranding.classList.add('visible');
+      }
+
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 100) {
+          navbar.classList.add('navbar-solid');
+        } else {
+          navbar.classList.remove('navbar-solid');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -2,40 +2,72 @@
 # this is an empty front matter
 ---
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{ site.data.conference.year }}</title>
+    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM SIGCOMM {{
+        site.data.conference.year }}</title>
 
     <!-- css -->
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body data-spy="scroll" data-target="#site-nav">
-    {% include header.html %}
+    {% include header-small.html %}
 
-    <section id="organization" class="section faq" style="display: block;">
-        <div class="container">
+    <section class="section">
+        <div class="article-content">
+            <h3>Previous Editions</h3>
 
-            <h3>Previous Editions</h3>		
-            <span>
-            <strong><a href="https://leo-net-workshop.github.io/2024/" target="_blank">LEO-NET 2024</a></strong>
-            </span>
-            <br>
-            <span>
-            <strong><a href="https://leo-net-workshop.github.io/2023/" target="_blank">LEO-NET 2023</a></strong>
-            </span>
+            <p>LEO-NET has been bringing together researchers and practitioners to explore the challenges and
+                opportunities in
+                LEO satellite networking since 2023.</p>
 
+            <h4><a href="https://leo-net-workshop.github.io/2024/" target="_blank">LEO-NET 2024</a></h4>
+            <p>The second workshop was held in conjunction with ACM SIGCOMM 2024, continuing to advance the field of LEO
+                satellite networking and communication research.</p>
+
+            <h4><a href="https://leo-net-workshop.github.io/2023/" target="_blank">LEO-NET 2023</a></h4>
+            <p>The inaugural workshop established LEO-NET as a premier venue for discussing the latest developments in
+                low
+                earth orbit satellite networks and their applications.</p>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; {{ site.data.conference.year }} {{ site.data.conference.short_title }}. All rights reserved.
+                </p>
+                <p>Part of <a href="https://conferences.sigcomm.org/sigcomm/{{ site.data.conference.year }}/"
+                        target="_blank">ACM SIGCOMM {{ site.data.conference.year }}</a></p>
+            </div>
+        </div>
+    </footer>
+
     <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            window.addEventListener('scroll', function () {
+                const navbar = document.querySelector('.navbar-custom');
+                if (window.scrollY > 100) {
+                    navbar.classList.add('navbar-solid');
+                } else {
+                    navbar.classList.remove('navbar-solid');
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
