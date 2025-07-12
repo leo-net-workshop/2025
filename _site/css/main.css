@@ -1905,3 +1905,346 @@ body {
   margin-top: 0 !important;
   padding-top: 6rem !important;
 }
+
+/* Previous Editions Page Styling - SCOPED TO PREVENT CROSS-CONTAMINATION */
+.editions-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+  gap: 2rem !important;
+  margin: 3rem 0 !important;
+}
+
+.edition-card {
+  background: white !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--border-light) !important;
+  box-shadow: var(--shadow-soft) !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transform: translateY(0) !important;
+}
+
+.edition-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: var(--shadow-large) !important;
+  border-color: var(--accent-light) !important;
+}
+
+.edition-card::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background: var(--gradient-primary) !important;
+  transform: scaleX(0) !important;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.edition-card:hover::before {
+  transform: scaleX(1) !important;
+}
+
+.edition-header {
+  padding: 2rem 2rem 1rem !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  background: linear-gradient(
+    135deg,
+    rgba(147, 51, 234, 0.03) 0%,
+    rgba(168, 85, 247, 0.02) 100%
+  ) !important;
+}
+
+.edition-year {
+  font-size: 3rem !important;
+  font-weight: 900 !important;
+  color: var(--accent-color) !important;
+  line-height: 1 !important;
+  letter-spacing: -0.04em !important;
+  background: var(--gradient-primary) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.edition-badge {
+  background: var(--accent-color) !important;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 20px !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+}
+
+.edition-content {
+  padding: 0 2rem 2rem !important;
+}
+
+.edition-title {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin-bottom: 1rem !important;
+  letter-spacing: -0.02em !important;
+}
+
+.edition-description {
+  color: var(--text-secondary) !important;
+  line-height: 1.7 !important;
+  margin-bottom: 1.5rem !important;
+  font-size: 1rem !important;
+}
+
+.edition-actions {
+  margin-top: auto !important;
+}
+
+.edition-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.75rem 1.5rem !important;
+  background: var(--accent-color) !important;
+  color: white !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.edition-link::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  ) !important;
+  transition: left 0.5s !important;
+}
+
+.edition-link:hover {
+  background: var(--accent-dark) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(147, 51, 234, 0.3) !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.edition-link:hover::before {
+  left: 100% !important;
+}
+
+.edition-link i {
+  transition: transform 0.3s ease !important;
+}
+
+.edition-link:hover i {
+  transform: translateX(4px) !important;
+}
+
+/* Timeline Section Styling */
+.timeline-section {
+  margin-top: 5rem !important;
+  padding: 3rem 0 !important;
+  position: relative !important;
+}
+
+.timeline-section h4 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  text-align: center !important;
+  margin-bottom: 3rem !important;
+  position: relative !important;
+}
+
+.timeline-section h4::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -0.5rem !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 80px !important;
+  height: 3px !important;
+  background: var(--gradient-primary) !important;
+  border-radius: 2px !important;
+}
+
+.timeline-content {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+}
+
+.timeline-content::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 2rem !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 2px !important;
+  background: linear-gradient(
+    to bottom,
+    var(--accent-light),
+    var(--accent-color)
+  ) !important;
+}
+
+.timeline-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 2rem !important;
+  margin-bottom: 3rem !important;
+  position: relative !important;
+}
+
+.timeline-marker {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50% !important;
+  background: var(--accent-color) !important;
+  border: 3px solid white !important;
+  box-shadow: 0 0 0 3px var(--accent-light) !important;
+  flex-shrink: 0 !important;
+  margin-top: 0.5rem !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.timeline-marker.completed {
+  background: var(--accent-dark) !important;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.3) !important;
+}
+
+.timeline-details {
+  flex: 1 !important;
+  background: white !important;
+  padding: 2rem !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--border-light) !important;
+  box-shadow: var(--shadow-soft) !important;
+  transition: all 0.3s ease !important;
+}
+
+.timeline-details:hover {
+  box-shadow: var(--shadow-medium) !important;
+  border-color: var(--accent-light) !important;
+}
+
+.timeline-year {
+  background: var(--purple-light) !important;
+  color: var(--accent-dark) !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 12px !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  display: inline-block !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.timeline-details h5 {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin-bottom: 0.5rem !important;
+  letter-spacing: -0.02em !important;
+}
+
+.timeline-details p {
+  color: var(--text-secondary) !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  font-size: 1rem !important;
+}
+
+/* Add staggered animation delays for edition cards */
+.edition-card:nth-child(1) {
+  animation: fadeInUp 0.6s ease-out !important;
+  animation-delay: 0.1s !important;
+  animation-fill-mode: both !important;
+}
+
+.edition-card:nth-child(2) {
+  animation: fadeInUp 0.6s ease-out !important;
+  animation-delay: 0.2s !important;
+  animation-fill-mode: both !important;
+}
+
+.edition-card:nth-child(3) {
+  animation: fadeInUp 0.6s ease-out !important;
+  animation-delay: 0.3s !important;
+  animation-fill-mode: both !important;
+}
+
+/* Responsive Design for Previous Editions */
+@media (max-width: 768px) {
+  .editions-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    margin: 2rem 0 !important;
+  }
+
+  .edition-header {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .edition-year {
+    font-size: 2.5rem !important;
+  }
+
+  .timeline-content::before {
+    left: 1rem !important;
+  }
+
+  .timeline-item {
+    gap: 1.5rem !important;
+  }
+
+  .timeline-details {
+    padding: 1.5rem !important;
+  }
+
+  .timeline-section {
+    margin-top: 3rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .edition-header {
+    padding: 1.5rem 1.5rem 1rem !important;
+  }
+
+  .edition-content {
+    padding: 0 1.5rem 1.5rem !important;
+  }
+
+  .edition-year {
+    font-size: 2rem !important;
+  }
+
+  .timeline-details {
+    padding: 1rem !important;
+  }
+
+  .timeline-details h5 {
+    font-size: 1.1rem !important;
+  }
+}

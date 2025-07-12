@@ -26,10 +26,26 @@
 
             <p>{{ site.data.previous_editions.intro }}</p>
 
-            {% for edition in site.data.previous_editions.editions %}
-            <h4><a href="{{ edition.url }}" target="_blank">LEO-NET {{ edition.year }}</a></h4>
-            <p>{{ edition.description }}</p>
-            {% endfor %}
+            <div class="editions-grid">
+                {% for edition in site.data.previous_editions.editions %}
+                <div class="edition-card">
+                    <div class="edition-header">
+                        <div class="edition-year">{{ edition.year }}</div>
+                        <div class="edition-badge">{{ edition.ordinal | capitalize }} Edition</div>
+                    </div>
+                    <div class="edition-content">
+                        <h4 class="edition-title">{{ edition.location }}</h4>
+                        <p class="edition-description">{{ edition.description }}</p>
+                        <div class="edition-actions">
+                            <a href="{{ edition.url }}" target="_blank" class="edition-link">
+                                <span>Visit Website</span>
+                                <i class="ion-ios-arrow-forward"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </section>
 
