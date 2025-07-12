@@ -2411,6 +2411,27 @@ body {
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
+/* Fix mobile collapse display as full-screen overlay */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: rgba(15, 23, 42, 0.98) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+    z-index: 999 !important;
+    overflow-y: auto !important;
+  }
+  .navbar-collapse.show,
+  .navbar-collapse.in {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
 /* Ultra-wide screens (1920px+) */
 @media (min-width: 1920px) {
   .navbar-custom .container-fluid {

@@ -14,35 +14,36 @@
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
-    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
-    <div class="container-fluid">
-        <div class="navbar-header">
+    <!— existing head content above —>
+<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<style>[x-cloak] { display: none !important; }</style>
 
-            <!-- logo -->
-            <div class="site-branding">
-                <a class="logo" href="index.html">LEO-NET 2025</a>
-            </div>
+<nav x-data="{ open: false }" id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="site-branding">
+        <a class="logo" href="index.html">LEO-NET 2025</a>
+      </div>
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items"
-                aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+      <button type="button" @click="open = !open" class="navbar-toggle" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div><!-- /.navbar-header -->
 
-        </div><!-- /.navbar-header -->
+    <div x-show="open" x-cloak x-transition class="collapse navbar-collapse" id="navbar-items">
+      <ul class="nav navbar-nav">
+        <!-- navigation menu -->
+        <li><a href="cfp.html">Call for Papers</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="committee.html">Committees</a></li>
+        <li><a href="previous_editions.html">Previous Editions</a></li>
+      </ul>
+    </div>
 
-        <div class="collapse navbar-collapse" id="navbar-items">
-            <ul class="nav navbar-nav">
-                <!-- navigation menu -->
-                <li><a href="cfp.html">Call for Papers</a></li>
-                <li><a href="program.html">Program</a></li>
-                <li><a href="committee.html">Committees</a></li>
-                <li><a href="previous_editions.html">Previous Editions</a></li>
-            </ul>
-        </div>
-    </div><!-- /.container -->
+  </div><!-- /.container -->
 </nav>
 
 <!-- Compact Header - For Other Pages -->
