@@ -28,8 +28,15 @@
       <div class="committee-list">
         {% for chair in site.data.chairs.general_chairs %}
         <div class="committee-member">
+          {% if chair.website %}
+          <a href="{{ chair.website }}" target="_blank" style="text-decoration: none; color: inherit;">
+            <h5>{{ chair.firstname }} {{ chair.lastname }}</h5>
+            <p>{{ chair.institution }}</p>
+          </a>
+          {% else %}
           <h5>{{ chair.firstname }} {{ chair.lastname }}</h5>
           <p>{{ chair.institution }}</p>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
@@ -38,8 +45,15 @@
       <div class="committee-list">
         {% for member in site.data.committee.tpc %}
         <div class="committee-member">
+          {% if member.website %}
+          <a href="{{ member.website }}" target="_blank" style="text-decoration: none; color: inherit;">
+            <h5>{{ member.name }}</h5>
+            <p>{{ member.institution }}</p>
+          </a>
+          {% else %}
           <h5>{{ member.name }}</h5>
           <p>{{ member.institution }}</p>
+          {% endif %}
         </div>
         {% endfor %}
       </div>

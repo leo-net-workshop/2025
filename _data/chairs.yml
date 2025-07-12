@@ -1,10 +1,13 @@
 general_chairs:
-  - firstname: Nitinder 
+  - firstname: Nitinder
     lastname: Mohan
     institution: Delft University of Technology, Netherlands
-  - firstname: Deepak 
+    website: https://www.nitindermohan.com/
+  - firstname: Deepak
     lastname: Vasisht
     institution: University of Illinois Urbana-Champaign, USA
-  - firstname: Debopam 
-    lastname: Bhattacherjee 
+    website: https://deepakv.web.illinois.edu
+  - firstname: Debopam
+    lastname: Bhattacherjee
     institution: Microsoft Research, India
+    website: https://bdebopam.github.io/
