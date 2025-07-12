@@ -2276,6 +2276,27 @@ body {
   animation: gentle-pulse 3s ease-in-out infinite !important;
 }
 
+/* Smooth countdown number animation */
+.countdown-number {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+@keyframes countdownPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-10px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2) translateY(0);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+.countdown-number.animate {
+  animation: countdownPop 0.5s ease forwards;
+}
+
 .countdown-label {
   display: block !important;
   font-size: 0.75rem !important;
