@@ -763,7 +763,7 @@ ul li {
   color: white !important;
   text-align: center !important;
   padding: 4rem 0 2rem !important;
-  margin-top: 2rem !important; /* Reduced from 6rem to 2rem to remove white space */
+  margin-top: 0 !important; /* Removed the 2rem margin that was causing whitespace */
   width: 100% !important;
   position: relative !important;
 }
