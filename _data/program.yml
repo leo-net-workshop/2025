@@ -1,7 +1,7 @@
 # LEO-NET 2025 Workshop Program
 # This file contains the complete program structure with placeholder URLs for papers
 
-title: "PROGRAM"
+title: "Program"
 subtitle: "The 3rd ACM Workshop on LEO Networking and Communication 2025"
 
 sessions:
@@ -11,7 +11,7 @@ sessions:
     chair: "Presentation by Chairs"
 
   - time: "09:00 - 10:00"
-    title: "Keynote: Cloud about the clouds"
+    title: "Keynote: Cloud above the clouds"
     type: "keynote"
     speaker:
       name: "Dr. Paulo Mendes"
