@@ -2432,6 +2432,48 @@ body {
   }
 }
 
+/* Add mobile-specific styles for the program page */
+@media (max-width: 480px) {
+  #program .program-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  #program .program-item {
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #program .program-time {
+    padding: 1rem;
+    min-width: auto;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  #program .program-content {
+    padding: 1rem;
+  }
+
+  #program .papers-list {
+    gap: 0.5rem;
+  }
+
+  #program .paper-item {
+    padding: 0.75rem;
+    border-radius: 6px;
+  }
+
+  #program .paper-title {
+    font-size: 1rem;
+  }
+
+  #program .paper-authors {
+    font-size: 0.8rem;
+  }
+}
+
 /* Ultra-wide screens (1920px+) */
 @media (min-width: 1920px) {
   .navbar-custom .container-fluid {
