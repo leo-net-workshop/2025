@@ -22,118 +22,115 @@
     {% include header-small.html %}
 
     <section id="program" class="section facts">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">{{ site.data.program.title }}</h3>
-                </div>
-            </div>
+        <div class="article-content">
+            <h3 class="section-title">{{ site.data.program.title }}</h3>
+        </div>
 
-            <div class="program-container">
-                {% for session in site.data.program.sessions %}
-                <div class="program-item {% if session.type == 'break' %}program-break{% endif %}">
-                    <div class="program-time">
-                        <span>{{ session.time }}</span>
-                    </div>
-                    <div class="program-content">
-                        {% if session.type == "keynote" %}
-                        {% if session.speaker.name and session.speaker.name != "" %}
-                        <div class="keynote-session">
-                            <h3 class="session-title">{{ session.title }}</h3>
-                            <div class="keynote-header">
-                                <div class="keynote-speaker-info">
-                                    <div class="speaker-photo">
-                                        {% if session.speaker.profile_url and session.speaker.profile_url != "" %}
-                                        <a href="{{ session.speaker.profile_url }}" target="_blank">
-                                            <img src="{{ session.speaker.image }}" alt="{{ session.speaker.name }}">
-                                        </a>
-                                        {% else %}
+        <div class="program-container">
+            {% for session in site.data.program.sessions %}
+            <div class="program-item {% if session.type == 'break' %}program-break{% endif %}">
+                <div class="program-time">
+                    <span>{{ session.time }}</span>
+                </div>
+                <div class="program-content">
+                    {% if session.type == "keynote" %}
+                    {% if session.speaker.name and session.speaker.name != "" %}
+                    <div class="keynote-session">
+                        <h3 class="session-title">{{ session.title }}</h3>
+                        <div class="keynote-header">
+                            <div class="keynote-speaker-info">
+                                <div class="speaker-photo">
+                                    {% if session.speaker.profile_url and session.speaker.profile_url != "" %}
+                                    <a href="{{ session.speaker.profile_url }}" target="_blank">
                                         <img src="{{ session.speaker.image }}" alt="{{ session.speaker.name }}">
-                                        {% endif %}
-                                    </div>
-                                    <div class="speaker-details">
-                                        <h4>{{ session.speaker.name }}</h4>
-                                        <p class="speaker-title">{{ session.speaker.title }}</p>
-                                    </div>
+                                    </a>
+                                    {% else %}
+                                    <img src="{{ session.speaker.image }}" alt="{{ session.speaker.name }}">
+                                    {% endif %}
+                                </div>
+                                <div class="speaker-details">
+                                    <h4>{{ session.speaker.name }}</h4>
+                                    <p class="speaker-title">{{ session.speaker.title }}</p>
                                 </div>
                             </div>
-                            {% if session.talk.abstract and session.talk.abstract != "" %}
-                            <div class="keynote-abstract">
-                                <p>{{ session.talk.abstract }}</p>
-                            </div>
-                            {% endif %}
                         </div>
-                        {% else %}
-                        <div class="keynote-session">
-                            <h3 class="session-title">{{ session.title }}</h3>
-                        </div>
-                        {% endif %}
-
-                        {% elsif session.type == "opening" %}
-                        <div class="opening-session">
-                            <h3 class="session-title">{{ session.title }}</h3>
-                            <p class="session-chair">Chair: {{ session.chair }}</p>
-                        </div>
-
-                        {% elsif session.type == "break" %}
-                        <div class="break-session">
-                            <h3 class="session-title">{{ session.title }}</h3>
-                        </div>
-
-                        {% elsif session.type == "technical_session" %}
-                        <div class="technical-session">
-                            <h3 class="session-title">{{ session.title }}</h3>
-                            {% if session.chair and session.chair != "" %}
-                            <p class="session-chair">Chair: {{ session.chair }}</p>
-                            {% endif %}
-                            <div class="papers-list">
-                                {% for paper in session.papers %}
-                                {% if paper.url and paper.url != "" %}
-                                <a href="{{ paper.url }}" class="paper-item" target="_blank">
-                                    <h4 class="paper-title">{{ paper.title }}</h4>
-                                    <p class="paper-authors">{{ paper.authors }}</p>
-                                </a>
-                                {% else %}
-                                <a href="#" class="paper-item" onclick="return false;">
-                                    <h4 class="paper-title">{{ paper.title }}</h4>
-                                    <p class="paper-authors">{{ paper.authors }}</p>
-                                </a>
-                                {% endif %}
-                                {% endfor %}
-                            </div>
-                        </div>
-
-                        {% elsif session.type == "panel" %}
-                        <div class="panel-session">
-                            <h3 class="session-title">{{ session.title }}</h3>
-                            {% if session.panelists and session.panelists.size > 0 %}
-                            <div class="panel-details">
-                                <div class="panelists">
-                                    <ul>
-                                        {% for panelist in session.panelists %}
-                                        {% if panelist.name and panelist.name != "" %}
-                                        <li>{{ panelist.name }} ({{ panelist.affiliation }})</li>
-                                        {% endif %}
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                                {% if session.moderator and session.moderator != "" and session.moderator != "TBD" %}
-                                <p class="moderator"><strong>Moderator:</strong> {{ session.moderator }}</p>
-                                {% endif %}
-                            </div>
-                            {% endif %}
-                        </div>
-
-                        {% elsif session.type == "closing" %}
-                        <div class="closing-session">
-                            <h3 class="session-title">{{ session.title }}</h3>
-                            <p class="session-chair">{{ session.chair }}</p>
+                        {% if session.talk.abstract and session.talk.abstract != "" %}
+                        <div class="keynote-abstract">
+                            <p>{{ session.talk.abstract }}</p>
                         </div>
                         {% endif %}
                     </div>
+                    {% else %}
+                    <div class="keynote-session">
+                        <h3 class="session-title">{{ session.title }}</h3>
+                    </div>
+                    {% endif %}
+
+                    {% elsif session.type == "opening" %}
+                    <div class="opening-session">
+                        <h3 class="session-title">{{ session.title }}</h3>
+                        <p class="session-chair">Chair: {{ session.chair }}</p>
+                    </div>
+
+                    {% elsif session.type == "break" %}
+                    <div class="break-session">
+                        <h3 class="session-title">{{ session.title }}</h3>
+                    </div>
+
+                    {% elsif session.type == "technical_session" %}
+                    <div class="technical-session">
+                        <h3 class="session-title">{{ session.title }}</h3>
+                        {% if session.chair and session.chair != "" %}
+                        <p class="session-chair">Chair: {{ session.chair }}</p>
+                        {% endif %}
+                        <div class="papers-list">
+                            {% for paper in session.papers %}
+                            {% if paper.url and paper.url != "" %}
+                            <a href="{{ paper.url }}" class="paper-item" target="_blank">
+                                <h4 class="paper-title">{{ paper.title }}</h4>
+                                <p class="paper-authors">{{ paper.authors }}</p>
+                            </a>
+                            {% else %}
+                            <a href="#" class="paper-item" onclick="return false;">
+                                <h4 class="paper-title">{{ paper.title }}</h4>
+                                <p class="paper-authors">{{ paper.authors }}</p>
+                            </a>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    {% elsif session.type == "panel" %}
+                    <div class="panel-session">
+                        <h3 class="session-title">{{ session.title }}</h3>
+                        {% if session.panelists and session.panelists.size > 0 %}
+                        <div class="panel-details">
+                            <div class="panelists">
+                                <ul>
+                                    {% for panelist in session.panelists %}
+                                    {% if panelist.name and panelist.name != "" %}
+                                    <li>{{ panelist.name }} ({{ panelist.affiliation }})</li>
+                                    {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% if session.moderator and session.moderator != "" and session.moderator != "TBD" %}
+                            <p class="moderator"><strong>Moderator:</strong> {{ session.moderator }}</p>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    {% elsif session.type == "closing" %}
+                    <div class="closing-session">
+                        <h3 class="session-title">{{ session.title }}</h3>
+                        <p class="session-chair">{{ session.chair }}</p>
+                    </div>
+                    {% endif %}
                 </div>
-                {% endfor %}
             </div>
+            {% endfor %}
+        </div>
         </div>
     </section>
 
