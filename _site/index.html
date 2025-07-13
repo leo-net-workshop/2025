@@ -274,17 +274,21 @@
         }
       }
 
-      // Orbital Countdown Timer to September 8th, 2025 08:50 Coimbra time
+      // Orbital Countdown Timer to date from homepage.yml
       function updateCountdown() {
         const countdownElement = document.getElementById('orbital-countdown');
         if (!countdownElement) return;
 
-        // Workshop starts at 08:50 on September 8th, 2025 in Coimbra, Portugal (WEST timezone)
-        const targetDate = new Date('2025-09-08T08:50:00+01:00'); // WEST is UTC+1
+        // Workshop date from homepage.yml data
+        const targetDate = new Date('2025-09-08T08:50:00+01:00');
         const now = new Date();
         const timeDifference = targetDate - now;
 
-        if (timeDifference > 0) {
+        // Check if it's the same day as the workshop
+        const isSameDay = now.toDateString() === targetDate.toDateString();
+
+        if (timeDifference > 0 && !isSameDay) {
+          // Before the workshop day - show countdown with "Time to Launch"
           const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
           const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
@@ -294,14 +298,28 @@
           document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
           document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
           document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+          document.querySelector('.countdown-title').textContent = '🚀 Time to Launch';
+        } else if (isSameDay && timeDifference > 0) {
+          // Same day but workshop hasn't started yet - show "Launch is live"
+          const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+          document.getElementById('days').textContent = '000';
+          document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+          document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+          document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+          document.querySelector('.countdown-title').textContent = '🚀 Launch is Live!';
         } else {
-          // Workshop has started or passed
+          // Workshop has started or passed - show "Look out for next launch"
           document.getElementById('days').textContent = '000';
           document.getElementById('hours').textContent = '00';
           document.getElementById('minutes').textContent = '00';
           document.getElementById('seconds').textContent = '00';
 
-          document.querySelector('.countdown-title').textContent = '🚀 LEO-NET 2025 Active!';
+          document.querySelector('.countdown-title').textContent = '🚀 Look out for next launch';
         }
       }
 
@@ -316,7 +334,7 @@
       console.log('🛰️ LEO-NET 2025: Satellite constellation initialized');
       console.log('🌍 Earth observation systems: Online');
       console.log('📡 Ground station connection: Established');
-      console.log('🚀 Mission control: All systems nominal');
+      console.log('🚀 Mission Countdown: Time to Launch');
     });
   </script>
 </body>
