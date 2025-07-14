@@ -1296,7 +1296,7 @@ ul li {
   font-weight: 400;
 }
 
-#program .opening-session .session-chair {
+/* #program .opening-session .session-chair {
   font-size: 1.1rem;
   color: var(--accent-color);
   font-weight: 600;
@@ -1320,7 +1320,7 @@ ul li {
   );
   border-color: var(--accent-light);
   transform: translateY(-2px);
-}
+} */
 
 /* Fix Break/Lunch Session Colors to Match Purple Theme */
 #program .program-break {
@@ -1361,13 +1361,13 @@ ul li {
 }
 
 /* Technical session specific chair styling */
+/*
 #program .technical-session .session-chair {
   background: rgba(147, 51, 234, 0.05);
   border-left-color: var(--accent-color);
   font-weight: 600;
 }
 
-/* Keynote session specific chair styling */
 #program .keynote-session .session-chair {
   background: rgba(168, 85, 247, 0.05);
   border-left-color: var(--accent-light);
@@ -1375,12 +1375,12 @@ ul li {
   font-weight: 600;
 }
 
-/* Panel session specific chair styling */
 #program .panel-session .session-chair {
   background: rgba(124, 58, 237, 0.05);
   border-left-color: var(--accent-dark);
   font-weight: 600;
 }
+*/
 
 /* Enhanced Keynote Session */
 #program .keynote-session {

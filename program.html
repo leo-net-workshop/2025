@@ -69,7 +69,9 @@
                     {% elsif session.type == "opening" %}
                     <div class="opening-session">
                         <h3 class="session-title">{{ session.title }}</h3>
+                        {% if session.chair and session.chair != "" %}
                         <p class="session-chair">Chair: {{ session.chair }}</p>
+                        {% endif %}
                     </div>
 
                     {% elsif session.type == "break" %}
@@ -114,17 +116,19 @@
                                     {% endfor %}
                                 </ul>
                             </div>
-                            {% if session.moderator and session.moderator != "" and session.moderator != "TBD" %}
-                            <p class="moderator"><strong>Moderator:</strong> {{ session.moderator }}</p>
-                            {% endif %}
                         </div>
+                        {% endif %}
+                        {% if session.chair and session.chair != "" %}
+                        <p class="session-chair">Moderator: {{ session.chair }}</p>
                         {% endif %}
                     </div>
 
                     {% elsif session.type == "closing" %}
                     <div class="closing-session">
                         <h3 class="session-title">{{ session.title }}</h3>
+                        {% if session.chair and session.chair != "" %}
                         <p class="session-chair">{{ session.chair }}</p>
+                        {% endif %}
                     </div>
                     {% endif %}
                 </div>

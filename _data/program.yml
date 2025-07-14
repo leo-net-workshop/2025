@@ -8,7 +8,6 @@ sessions:
   - time: "08:50 - 09:00"
     title: "Workshop Starts + Welcome Address"
     type: "opening"
-    chair: "Presentation by Chairs"
 
   - time: "09:00 - 10:00"
     title: "Keynote: Cloud above the clouds"
@@ -25,6 +24,7 @@ sessions:
   - time: "10:00 - 11:00"
     title: "Technical Session 1: Architectural Innovations for the Next Internet-from-Space"
     type: "technical_session"
+    chair: "TBD"
     papers:
       - title: "The Internet from Space, Reimagined – Leveraging Altitude for Efficient Global Coverage"
         authors: "Chris Misa, Ramakrishnan Durairajan (University of Oregon)"
@@ -42,6 +42,7 @@ sessions:
   - time: "11:25 - 12:45"
     title: "Technical Session 2: Performance Characterization & Measurements"
     type: "technical_session"
+    chair: "TBD"
     papers:
       - title: "FjordLink – Comparison of Starlink and 5G Networks for Tele-operated Vessel Control"
         authors: "Birkan Denizer (Kiel University); Nils Dohse (ADDIX GmbH); Olaf Landsiedel (Hamburg University of Technology & Kiel University)"
@@ -62,6 +63,7 @@ sessions:
   - time: "14:00 - 14:40"
     title: "Technical Session 3: Experimentation & Monitoring Platforms"
     type: "technical_session"
+    chair: "TBD"
     papers:
       - title: 'How LLM Saved Me from Struggling with Experiment Reproduction ("Laser")'
         authors: "Yibo Wang, Yunan Hou, Zeqi Lai, Hewu Li, Qian Wu, Jun Liu, Yuanjie Li, Xin Xie (Tsinghua University); Zhifeng Han (Xidian University)"
@@ -72,6 +74,7 @@ sessions:
   - time: "14:40 - 15:45"
     title: "Panel Discussion: To be Decided"
     type: "panel"
+    chair: "TBD"
 
   - time: "15:45 - 16:10"
     title: "Coffee Break"
@@ -80,6 +83,7 @@ sessions:
   - time: "16:10 - 17:10"
     title: "Technical Session 4: Environmental Resilience of LEO Links"
     type: "technical_session"
+    chair: "TBD"
     papers:
       - title: "Simulation and Comparison of Vehicle-Satellite Connectivity under a 3D Foliage Environment"
         authors: "Kevin T. Li, Christian A. Hofmann, Andreas Knopp (University of the Bundeswehr Munich)"
@@ -97,4 +101,3 @@ sessions:
   - time: "17:55 - 18:00"
     title: "Workshop Ends + Award"
     type: "opening"
-    chair: "Presentation"
