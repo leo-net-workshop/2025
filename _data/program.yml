@@ -1,5 +1,5 @@
 # LEO-NET 2025 Workshop Program
-# This file contains the complete program structure with placeholder URLs for papers
+# This file contains the complete program structure
 
 title: "Program"
 subtitle: "The 3rd ACM Workshop on LEO Networking and Communication 2025"
@@ -25,19 +25,15 @@ sessions:
   - time: "10:00 - 11:00"
     title: "Technical Session 1: Architectural Innovations for the Next Internet-from-Space"
     type: "technical_session"
-    chair: ""
     papers:
       - title: "The Internet from Space, Reimagined – Leveraging Altitude for Efficient Global Coverage"
         authors: "Chris Misa, Ramakrishnan Durairajan (University of Oregon)"
-        url: ""
 
       - title: "A Distributed Data Store in Orbit"
         authors: "Joerg Ott (Technische Universität München); Jussi Kangasharju (University of Helsinki); Nitinder Mohan (TU Delft)"
-        url: ""
 
       - title: "Optimising LEO Network for the People"
         authors: "Prince Bhardwaj, Abdullahi K. Abubakar, Nishanth Sastry (University of Surrey)"
-        url: ""
 
   - time: "11:00 - 11:25"
     title: "Coffee Break"
@@ -46,23 +42,18 @@ sessions:
   - time: "11:25 - 12:45"
     title: "Technical Session 2: Performance Characterization & Measurements"
     type: "technical_session"
-    chair: ""
     papers:
       - title: "FjordLink – Comparison of Starlink and 5G Networks for Tele-operated Vessel Control"
         authors: "Birkan Denizer (Kiel University); Nils Dohse (ADDIX GmbH); Olaf Landsiedel (Hamburg University of Technology & Kiel University)"
-        url: ""
 
       - title: "Better Fill Up Your Pipe – Revisiting Starlink's Burst Characterization"
         authors: "Till Zimmermann, Eric Lanfer, Dominic Laniewski, Simon Brinkmann, Nils Aschenbruck (Osnabrück University)"
-        url: ""
 
       - title: "A Detailed Characterization of Starlink One-way Delay"
         authors: "Johan Garcia, Simon Sundberg (Karlstad University); Anna Brunstrom (Karlstad University and University of Malaga)"
-        url: ""
 
       - title: "All Roads Lead to Roman-HitchHiking – Global Outage Detection for LEO Networks"
         authors: "Manda Tran, Khiet Huynh, Dravya Jain, Dylan Truong, Sirapop Theeranantachai (UCLA); Beichuan Zhang (University of Arizona); Lixia Zhang, Liz Izhikevich (UCLA)"
-        url: ""
 
   - time: "12:45 - 14:00"
     title: "Lunch"
@@ -71,24 +62,16 @@ sessions:
   - time: "14:00 - 14:40"
     title: "Technical Session 3: Experimentation & Monitoring Platforms"
     type: "technical_session"
-    chair: ""
     papers:
       - title: 'How LLM Saved Me from Struggling with Experiment Reproduction ("Laser")'
         authors: "Yibo Wang, Yunan Hou, Zeqi Lai, Hewu Li, Qian Wu, Jun Liu, Yuanjie Li, Xin Xie (Tsinghua University); Zhifeng Han (Xidian University)"
-        url: ""
 
       - title: "MOSAIC – Piecing Together 5G and LEOs for NTN Integration Experimentation"
         authors: "Revika Anand, Edward Austin, Charalampos Rotsos, Paul Smith, Nicholas Race (Lancaster University)"
-        url: ""
 
   - time: "14:40 - 15:45"
     title: "Panel Discussion: To be Decided"
     type: "panel"
-    topic: "To be Decided"
-    panelists:
-      - name: ""
-        affiliation: ""
-    moderator: ""
 
   - time: "15:45 - 16:10"
     title: "Coffee Break"
@@ -97,31 +80,19 @@ sessions:
   - time: "16:10 - 17:10"
     title: "Technical Session 4: Environmental Resilience of LEO Links"
     type: "technical_session"
-    chair: ""
     papers:
       - title: "Simulation and Comparison of Vehicle-Satellite Connectivity under a 3D Foliage Environment"
         authors: "Kevin T. Li, Christian A. Hofmann, Andreas Knopp (University of the Bundeswehr Munich)"
-        url: ""
 
       - title: "An Investigation of Starlink's Performance during the May 2024 Solar Super-storm"
         authors: "Suvam Basak (PhD Candidate, Indian Institute of Technology Kanpur); Amitangshu Pal (Indian Institute of Technology Kanpur); Debopam Bhattacherjee (Microsoft Research India)"
-        url: ""
 
       - title: "A Deep Dive into the Impact of Solar Storms on LEO Satellite Networks"
         authors: "Eunju Kang, Alagappan Ramanathan, Sangeetha Abdu Jyothi (University of California, Irvine)"
-        url: ""
 
   - time: "17:10 - 17:55"
     title: "Keynote 2: To be Decided"
     type: "keynote"
-    speaker:
-      name: ""
-      title: ""
-      image: ""
-      profile_url: ""
-    talk:
-      title: "To be Decided"
-      abstract: ""
 
   - time: "17:55 - 18:00"
     title: "Workshop Ends + Award"
