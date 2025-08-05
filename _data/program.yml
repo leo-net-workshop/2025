@@ -5,11 +5,11 @@ title: "Program"
 subtitle: "The 3rd ACM Workshop on LEO Networking and Communication 2025"
 
 sessions:
-  - time: "08:50 - 09:00"
+  - time: "08:45 - 09:00"
     title: "Workshop Starts + Welcome Address"
     type: "opening"
 
-  - time: "09:00 - 10:00"
+  - time: "09:00 - 09:50"
     title: "Keynote: Cloud above the clouds"
     type: "keynote"
     speaker:
@@ -21,26 +21,34 @@ sessions:
       title: "Cloud about the clouds"
       abstract: "Currently, a mere 20% of data processing and analysis occurs locally, with a dominant 80% centralized in data centers. However, this paradigm is shifting. Predictions indicate that within five years, edge computing will handle the majority of data processing and analytics. This trend is driven by the escalating demand for real-time data access and the need to manage the burgeoning data volumes generated at the network's edge, exemplified by Earth Observation Services. Integrating edge computing into space platforms brings processing closer to data generation, significantly reducing communication bottlenecks and accelerating data analysis. This approach alleviates the data load transmitted to Earth, enabling faster decision-making and response times. Extending this concept, space edge computing can evolve into a robust space cloud infrastructure, facilitated by high-speed interconnectivity and distributed computing frameworks. This platform would offer in-space computing resources and services, fostering flexible data sharing and task distribution. Beyond basic edge computing, it could support complex data analysis and storage, providing large-scale computing services that complement terrestrial cloud infrastructure. This presentation will delve into the concepts of space edge and cloud computing, exploring the inherent challenges and the transformative opportunities they present."
 
-  - time: "10:00 - 11:00"
-    title: "Technical Session 1: Architectural Innovations for the Next Internet-from-Space"
+  - time: "09:50 - 10:30"
+    title: "Technical Session 1: Improving Internet-from-Space"
     type: "technical_session"
     chair: "TBD"
     papers:
       - title: "The Internet from Space, Reimagined – Leveraging Altitude for Efficient Global Coverage"
-        authors: "Chris Misa, Ramakrishnan Durairajan (University of Oregon)"
+        authors: "Chris Misa, Ramakrishnan Durairajan (University of Oregon and Link Oregon)"
 
       - title: "A Distributed Data Store in Orbit"
         authors: "Joerg Ott (Technische Universität München); Jussi Kangasharju (University of Helsinki); Nitinder Mohan (TU Delft)"
 
-      - title: "Optimising LEO Network for the People"
-        authors: "Prince Bhardwaj, Abdullahi K. Abubakar, Nishanth Sastry (University of Surrey)"
-
-  - time: "11:00 - 11:25"
-    title: "Coffee Break"
+  - time: "10:30 - 11:00"
+    title: "☕ Coffee Break"
     type: "break"
 
-  - time: "11:25 - 12:45"
-    title: "Technical Session 2: Performance Characterization & Measurements"
+  - time: "11:00 - 11:20"
+    title: "Technical Session 2: LEO Internet for All"
+    type: "technical_session"
+    chair: "TBD"
+    papers:
+      - title: "Optimising LEO Network for the People"
+        authors: "Prince Bhardwaj Pawankumar Sharma, Abdullahi K. Abubakar, Nishanth Sastry (University of Surrey)"
+
+      - title: "Simulation and Comparison of Vehicle-Satellite Connectivity under a 3D Foliage Environment"
+        authors: "Kevin T. Li, Christian A. Hofmann, Andreas Knopp (University of the Bundeswehr Munich)"
+
+  - time: "11:20 - 12:40"
+    title: "Technical Session 3: Performance Characterization & Measurements"
     type: "technical_session"
     chair: "TBD"
     papers:
@@ -53,15 +61,12 @@ sessions:
       - title: "A Detailed Characterization of Starlink One-way Delay"
         authors: "Johan Garcia, Simon Sundberg (Karlstad University); Anna Brunstrom (Karlstad University and University of Malaga)"
 
-      - title: "All Roads Lead to Roman-HitchHiking – Global Outage Detection for LEO Networks"
-        authors: "Manda Tran, Khiet Huynh, Dravya Jain, Dylan Truong, Sirapop Theeranantachai (UCLA); Beichuan Zhang (University of Arizona); Lixia Zhang, Liz Izhikevich (UCLA)"
-
-  - time: "12:45 - 14:00"
-    title: "Lunch"
+  - time: "12:40 - 14:00"
+    title: "🍲 Lunch"
     type: "break"
 
   - time: "14:00 - 14:40"
-    title: "Technical Session 3: Experimentation & Monitoring Platforms"
+    title: "Technical Session 4: Experimentation & Monitoring Platforms"
     type: "technical_session"
     chair: "TBD"
     papers:
@@ -77,16 +82,16 @@ sessions:
     chair: "TBD"
 
   - time: "15:45 - 16:10"
-    title: "Coffee Break"
+    title: "☕ Coffee Break"
     type: "break"
 
   - time: "16:10 - 17:10"
-    title: "Technical Session 4: Environmental Resilience of LEO Links"
+    title: "Technical Session 5: Resilience of LEO Internet"
     type: "technical_session"
     chair: "TBD"
     papers:
-      - title: "Simulation and Comparison of Vehicle-Satellite Connectivity under a 3D Foliage Environment"
-        authors: "Kevin T. Li, Christian A. Hofmann, Andreas Knopp (University of the Bundeswehr Munich)"
+      - title: "Towards Global Outage Detection for LEO Networks"
+        authors: "Manda Tran, Khiet Huynh, Dravya Jain, Dylan Truong, Sirapop Theeranantachai (University of California, Los Angeles); Beichuan Zhang (University of Arizona); Lixia Zhang, Liz Izhikevich (University of California, Los Angeles)"
 
       - title: "An Investigation of Starlink's Performance during the May 2024 Solar Super-storm"
         authors: "Suvam Basak (PhD Candidate, Indian Institute of Technology Kanpur); Amitangshu Pal (Indian Institute of Technology Kanpur); Debopam Bhattacherjee (Microsoft Research India)"
