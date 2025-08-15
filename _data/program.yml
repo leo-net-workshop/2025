@@ -100,8 +100,16 @@ sessions:
         authors: "Eunju Kang, Alagappan Ramanathan, Sangeetha Abdu Jyothi (University of California, Irvine)"
 
   - time: "17:10 - 17:55"
-    title: "Keynote 2: To be Decided"
+    title: "Keynote: TBD"
     type: "keynote"
+    speaker:
+      name: "Dr. Zeqi Lai"
+      title: "Tsinghua University"
+      image: "img/speakers/zeqi-lai.jpg"
+      profile_url: "https://lzq8272587.github.io/"
+    talk:
+      title: "TBD"
+      abstract: "TBD"
 
   - time: "17:55 - 18:00"
     title: "Workshop Ends + Award"
