@@ -1448,6 +1448,155 @@ ul li {
   border: 1px solid #e5e7eb;
 }
 
+/* Enhanced Panel Session Styling */
+#program .panel-session {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#program .panel-topic {
+  padding: 1rem 1.5rem;
+  background: rgba(147, 51, 234, 0.04);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-light);
+  margin-bottom: 1rem;
+}
+
+#program .panel-topic p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Panel Speakers Grid Layout */
+#program .panel-speakers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: transparent;
+  padding: 2rem;
+  border-radius: 12px;
+  border: none;
+  margin: 1rem 0;
+}
+
+#program .panel-speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 180px;
+  max-width: 220px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 1rem;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: none;
+}
+
+#program .panel-speaker:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(147, 51, 234, 0.12);
+  background: rgba(147, 51, 234, 0.02);
+}
+
+#program .panel-speaker-photo {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+#program .panel-speaker-photo img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent-light);
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.15);
+  transition: all 0.3s ease;
+}
+
+#program .panel-speaker:hover .panel-speaker-photo img {
+  border-color: var(--accent-color);
+  box-shadow: 0 6px 16px rgba(147, 51, 234, 0.25);
+  transform: scale(1.05);
+}
+
+#program .panel-speaker-photo a {
+  display: block;
+  text-decoration: none;
+}
+
+#program .panel-speaker-info {
+  width: 100%;
+}
+
+#program .panel-speaker-info h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+#program .panel-speaker-affiliation {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Mobile responsiveness for panel speakers */
+@media (max-width: 768px) {
+  #program .panel-speakers {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  #program .panel-speaker {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  #program .panel-speaker-photo img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  #program .panel-speakers {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  #program .panel-speaker {
+    padding: 0.75rem;
+  }
+
+  #program .panel-speaker-photo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #program .panel-speaker-info h4 {
+    font-size: 1rem;
+  }
+
+  #program .panel-speaker-affiliation {
+    font-size: 0.85rem;
+  }
+}
+
 /* Committee Page Styling - SCOPED TO PREVENT CROSS-CONTAMINATION */
 .committee-list {
   display: grid !important;

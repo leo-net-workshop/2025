@@ -24,7 +24,7 @@ sessions:
   - time: "09:50 - 10:30"
     title: "Technical Session 1: Improving Internet-from-Space"
     type: "technical_session"
-    chair: "TBD"
+    # chair: "TBD"
     papers:
       - title: "The Internet from Space, Reimagined – Leveraging Altitude for Efficient Global Coverage"
         authors: "Chris Misa, Ramakrishnan Durairajan (University of Oregon and Link Oregon)"
@@ -39,7 +39,7 @@ sessions:
   - time: "11:00 - 11:20"
     title: "Technical Session 2: LEO Internet for All"
     type: "technical_session"
-    chair: "TBD"
+    # chair: "TBD"
     papers:
       - title: "Optimising LEO Network for the People"
         authors: "Prince Bhardwaj Pawankumar Sharma, Abdullahi K. Abubakar, Nishanth Sastry (University of Surrey)"
@@ -50,7 +50,7 @@ sessions:
   - time: "11:20 - 12:40"
     title: "Technical Session 3: Performance Characterization & Measurements"
     type: "technical_session"
-    chair: "TBD"
+    # chair: "TBD"
     papers:
       - title: "FjordLink – Comparison of Starlink and 5G Networks for Tele-operated Vessel Control"
         authors: "Birkan Denizer (Kiel University); Nils Dohse (ADDIX GmbH); Olaf Landsiedel (Hamburg University of Technology & Kiel University)"
@@ -68,7 +68,7 @@ sessions:
   - time: "14:00 - 14:40"
     title: "Technical Session 4: Experimentation & Monitoring Platforms"
     type: "technical_session"
-    chair: "TBD"
+    # chair: "TBD"
     papers:
       - title: 'How LLM Saved Me from Struggling with Experiment Reproduction ("Laser")'
         authors: "Yibo Wang, Yunan Hou, Zeqi Lai, Hewu Li, Qian Wu, Jun Liu, Yuanjie Li, Xin Xie (Tsinghua University); Zhifeng Han (Xidian University)"
@@ -77,9 +77,25 @@ sessions:
         authors: "Revika Anand, Edward Austin, Charalampos Rotsos, Paul Smith, Nicholas Race (Lancaster University)"
 
   - time: "14:40 - 15:45"
-    title: "Panel Discussion: To be Decided"
+    title: "Panel Discussion: Sustainability in the `Internet-over-Space' Race"
     type: "panel"
-    chair: "TBD"
+    panelists:
+      - name: "Dr. Zeqi Lai"
+        title: "Tsinghua University"
+        image: "img/speakers/zeqi-lai.jpg"
+        profile_url: "https://lzq8272587.github.io/"
+      - name: "Dr. Paulo Mendes"
+        title: "Airbus Research"
+        image: "img/speakers/Paulo-Mendes.jpeg"
+        profile_url: "https://www.paulomilheiromendes.com/about-me"
+      - name: "Prof. Dr. Jörg Ott"
+        title: "Technical University of Munich"
+        image: "img/speakers/jorg-ott.webp"
+        profile_url: "https://www.ce.cit.tum.de/cm/research-group/joerg-ott/"
+      - name: "Prof. Dr. Nishanth Sastry"
+        title: "University of Surrey"
+        image: "img/speakers/nishanth-sastry.jpg"
+        profile_url: "https://www.surrey.ac.uk/people/nishanth-sastry"
 
   - time: "15:45 - 16:10"
     title: "☕ Coffee Break"
@@ -88,7 +104,7 @@ sessions:
   - time: "16:10 - 17:10"
     title: "Technical Session 5: Resilience of LEO Internet"
     type: "technical_session"
-    chair: "TBD"
+    # chair: "TBD"
     papers:
       - title: "Towards Global Outage Detection for LEO Networks"
         authors: "Manda Tran, Khiet Huynh, Dravya Jain, Dylan Truong, Sirapop Theeranantachai (University of California, Los Angeles); Beichuan Zhang (University of Arizona); Lixia Zhang, Liz Izhikevich (University of California, Los Angeles)"
@@ -100,7 +116,7 @@ sessions:
         authors: "Eunju Kang, Alagappan Ramanathan, Sangeetha Abdu Jyothi (University of California, Irvine)"
 
   - time: "17:10 - 17:55"
-    title: "Keynote: TBD"
+    title: "Keynote: Towards A Scalable and Resilient Satellite Internet"
     type: "keynote"
     speaker:
       name: "Dr. Zeqi Lai"
@@ -108,8 +124,9 @@ sessions:
       image: "img/speakers/zeqi-lai.jpg"
       profile_url: "https://lzq8272587.github.io/"
     talk:
-      title: "TBD"
-      abstract: "TBD"
+      title: "Towards A Scalable and Resilient Satellite Internet"
+      abstract: " Low-Earth orbit (LEO) broadband satellite constellations are rapidly extending the boundaries of the Internet. However, unlike traditional terrestrial infrastructures, satellite Internet operates under the highly dynamic and unstable conditions of outer space. On the one hand, the continuous high-speed movement of LEO satellites relative to the Earth's surface results in a constantly changing network topology. On the other hand, frequent node and link failures in the harsh space environment further challenge the availability, stability, and reliability of such networks.<br>
+      In this talk, I will first discuss how the unique characteristics of LEO satellite networks reshape the Internet architecture and protocol stack when extended into space. I will then present our recent efforts in developing resilient and scalable satellite Internet protocols, covering topics such as topology design, routing, transport, applications, and experimental methodologies. Moreover, I will also share our efforts in satellite network standardization and education. Finally, I will outline several future directions that we believe are critical for building an open, stable, and secure global satellite Internet."
 
   - time: "17:55 - 18:00"
     title: "Workshop Ends + Award"

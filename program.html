@@ -105,17 +105,33 @@
                     {% elsif session.type == "panel" %}
                     <div class="panel-session">
                         <h3 class="session-title">{{ session.title }}</h3>
+                        {% if session.topic and session.topic != "" %}
+                        <div class="panel-topic">
+                            <p>{{ session.topic }}</p>
+                        </div>
+                        {% endif %}
                         {% if session.panelists and session.panelists.size > 0 %}
-                        <div class="panel-details">
-                            <div class="panelists">
-                                <ul>
-                                    {% for panelist in session.panelists %}
-                                    {% if panelist.name and panelist.name != "" %}
-                                    <li>{{ panelist.name }} ({{ panelist.affiliation }})</li>
+                        <div class="panel-speakers">
+                            {% for panelist in session.panelists %}
+                            {% if panelist.name and panelist.name != "" %}
+                            <div class="panel-speaker">
+                                <div class="panel-speaker-photo">
+                                    {% if panelist.profile_url and panelist.profile_url != "" and panelist.profile_url
+                                    != "#" %}
+                                    <a href="{{ panelist.profile_url }}" target="_blank">
+                                        <img src="{{ panelist.image }}" alt="{{ panelist.name }}">
+                                    </a>
+                                    {% else %}
+                                    <img src="{{ panelist.image }}" alt="{{ panelist.name }}">
                                     {% endif %}
-                                    {% endfor %}
-                                </ul>
+                                </div>
+                                <div class="panel-speaker-info">
+                                    <h4>{{ panelist.name }}</h4>
+                                    <p class="panel-speaker-affiliation">{{ panelist.title }}</p>
+                                </div>
                             </div>
+                            {% endif %}
+                            {% endfor %}
                         </div>
                         {% endif %}
                         {% if session.chair and session.chair != "" %}
