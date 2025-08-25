@@ -28,9 +28,11 @@ sessions:
     papers:
       - title: "The Internet from Space, Reimagined – Leveraging Altitude for Efficient Global Coverage"
         authors: "Chris Misa, Ramakrishnan Durairajan (University of Oregon and Link Oregon)"
+        url: "https://doi.org/10.1145/3748749.3749092"
 
       - title: "A Distributed Data Store in Orbit"
         authors: "Joerg Ott (Technische Universität München); Jussi Kangasharju (University of Helsinki); Nitinder Mohan (TU Delft)"
+        url: "https://doi.org/10.1145/3748749.3749093"
 
   - time: "10:30 - 11:00"
     title: "☕ Coffee Break"
@@ -43,6 +45,7 @@ sessions:
     papers:
       - title: "Optimising LEO Network for the People"
         authors: "Prince Bhardwaj Pawankumar Sharma, Abdullahi K. Abubakar, Nishanth Sastry (University of Surrey)"
+        url: "https://arxiv.org/abs/2405.12345"
 
       - title: "Simulation and Comparison of Vehicle-Satellite Connectivity under a 3D Foliage Environment"
         authors: "Kevin T. Li, Christian A. Hofmann, Andreas Knopp (University of the Bundeswehr Munich)"
@@ -54,12 +57,17 @@ sessions:
     papers:
       - title: "FjordLink – Comparison of Starlink and 5G Networks for Tele-operated Vessel Control"
         authors: "Birkan Denizer (Kiel University); Nils Dohse (ADDIX GmbH); Olaf Landsiedel (Hamburg University of Technology & Kiel University)"
+        urlk: "https://doi.org/10.1145/3748749.3749085"
 
       - title: "Better Fill Up Your Pipe – Revisiting Starlink's Burst Characterization"
         authors: "Till Zimmermann, Eric Lanfer, Dominic Laniewski, Simon Brinkmann, Nils Aschenbruck (Osnabrück University)"
+        url: "https://doi.org/10.1145/3748749.3749089"
+
 
       - title: "A Detailed Characterization of Starlink One-way Delay"
         authors: "Johan Garcia, Simon Sundberg (Karlstad University); Anna Brunstrom (Karlstad University and University of Malaga)"
+        url: "https://doi.org/10.1145/3748749.3749090"
+
 
   - time: "12:40 - 14:00"
     title: "🍲 Lunch"
@@ -72,9 +80,11 @@ sessions:
     papers:
       - title: 'How LLM Saved Me from Struggling with Experiment Reproduction ("Laser")'
         authors: "Yibo Wang, Yunan Hou, Zeqi Lai, Hewu Li, Qian Wu, Jun Liu, Yuanjie Li, Xin Xie (Tsinghua University); Zhifeng Han (Xidian University)"
+        url: "https://doi.org/10.1145/3748749.3749084"
 
       - title: "MOSAIC – Piecing Together 5G and LEOs for NTN Integration Experimentation"
         authors: "Revika Anand, Edward Austin, Charalampos Rotsos, Paul Smith, Nicholas Race (Lancaster University)"
+        url: "https://doi.org/10.1145/3748749.3749091"
 
   - time: "14:40 - 15:45"
     title: "Panel Discussion: Sustainability in the `Internet-over-Space' Race"
@@ -112,12 +122,15 @@ sessions:
     papers:
       - title: "Towards Global Outage Detection for LEO Networks"
         authors: "Manda Tran, Khiet Huynh, Dravya Jain, Dylan Truong, Sirapop Theeranantachai (University of California, Los Angeles); Beichuan Zhang (University of Arizona); Lixia Zhang, Liz Izhikevich (University of California, Los Angeles)"
+        url: "https://doi.org/10.1145/3748749.3749088"
 
       - title: "An Investigation of Starlink's Performance during the May 2024 Solar Super-storm"
         authors: "Suvam Basak (PhD Candidate, Indian Institute of Technology Kanpur); Amitangshu Pal (Indian Institute of Technology Kanpur); Debopam Bhattacherjee (Microsoft Research India)"
+        url: "https://doi.org/10.1145/3748749.3749087"
 
       - title: "A Deep Dive into the Impact of Solar Storms on LEO Satellite Networks"
         authors: "Eunju Kang, Alagappan Ramanathan, Sangeetha Abdu Jyothi (University of California, Irvine)"
+        url: "https://doi.org/10.1145/3748749.3749094"
 
   - time: "17:10 - 17:55"
     title: "Keynote: Towards A Scalable and Resilient Satellite Internet"
