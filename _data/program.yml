@@ -93,7 +93,7 @@ sessions:
     type: "panel"
     panelists:
       - name: "Prof. Dr. Ramesh K. Sitaraman"
-        title: "University of Massachusetts Amherst"
+        title: "University of Massachusetts Amherst & <br> Akamai Technologies"
         image: "img/speakers/ramesh_sitaraman.jpg"
         profile_url: "https://groups.cs.umass.edu/ramesh/"
       - name: "Dr. Zeqi Lai"
