@@ -39,7 +39,7 @@ sessions:
     title: "☕ Coffee Break"
     type: "break"
 
-  - time: "11:00 - 11:20"
+  - time: "11:00 - 11:40"
     title: "Technical Session 2: Improving Internet-from-Space"
     type: "technical_session"
     # chair: "TBD"
@@ -52,7 +52,7 @@ sessions:
         authors: "Joerg Ott (Technische Universität München); Jussi Kangasharju (University of Helsinki); Nitinder Mohan (TU Delft)"
         url: "https://doi.org/10.1145/3748749.3749093"
 
-  - time: "11:20 - 12:40"
+  - time: "11:40 - 12:40"
     title: "Technical Session 3: Performance Characterization & Measurements"
     type: "technical_session"
     # chair: "TBD"
