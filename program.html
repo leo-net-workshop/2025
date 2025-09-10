@@ -88,12 +88,25 @@
                         <div class="papers-list">
                             {% for paper in session.papers %}
                             {% if paper.url and paper.url != "" %}
-                            <a href="{{ paper.url }}" class="paper-item" target="_blank">
+                            <a href="{{ paper.url }}"
+                                class="paper-item{% if paper.best_paper_award %} best-paper-award{% endif %}"
+                                target="_blank">
+                                {% if paper.best_paper_award %}
+                                <div class="best-paper-badge" data-award="{{ paper.best_paper_award }}">
+                                    Best Paper
+                                </div>
+                                {% endif %}
                                 <h4 class="paper-title">{{ paper.title }}</h4>
                                 <p class="paper-authors">{{ paper.authors }}</p>
                             </a>
                             {% else %}
-                            <a href="#" class="paper-item" onclick="return false;">
+                            <a href="#" class="paper-item{% if paper.best_paper_award %} best-paper-award{% endif %}"
+                                onclick="return false;">
+                                {% if paper.best_paper_award %}
+                                <div class="best-paper-badge" data-award="{{ paper.best_paper_award }}">
+                                    Best Paper
+                                </div>
+                                {% endif %}
                                 <h4 class="paper-title">{{ paper.title }}</h4>
                                 <p class="paper-authors">{{ paper.authors }}</p>
                             </a>

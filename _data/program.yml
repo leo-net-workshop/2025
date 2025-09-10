@@ -133,6 +133,8 @@ sessions:
       - title: "A Deep Dive into the Impact of Solar Storms on LEO Satellite Networks"
         authors: "Eunju Kang, Alagappan Ramanathan, Sangeetha Abdu Jyothi (University of California, Irvine)"
         url: "https://doi.org/10.1145/3748749.3749094"
+        best_paper_award: "Dave Taht Outstanding Paper Award"
+        
 
   - time: "17:10 - 17:55"
     title: "Keynote: Towards A Scalable and Resilient Satellite Internet"
